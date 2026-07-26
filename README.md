@@ -252,4 +252,4 @@ streamlit run dashboard/app.py
 
 ---
 
-**Sonali Kumari — Honeywell Hackathon 2026 (Q4)**
+**Sonali Kumari — VIT — Honeywell Hackathon 2026 (Q4)**
