@@ -19,7 +19,7 @@ An AI/ML system that models "normal" access and connection behaviour for users a
 📺 **Watch the complete project walkthrough and live demonstration**
 
 ▶️ **Demo Video:**  
-https://www.veed.io/view/d8b90011-f115-493a-aea4-08cd0d79eced?source=editor&panel=share
+https://drive.google.com/file/d/1pWk3mUrOpDxayyCU1uWudkfTgAxAWX5S/view?usp=sharing
 
 💡 *The demo showcases the complete workflow—from anomaly detection and AI models to the interactive Streamlit dashboard and explainable risk analysis.*
 
