@@ -1,6 +1,6 @@
 # CyberSentinel — AI-Powered Behavioral Anomaly Detection for Cybersecurity
 
-**Honeywell Hackathon 2026 | Q4 — Software | Theme: Cybersecurity / AI-ML**
+**Honeywell Hackathon 2026 | Q4 —  | Theme: Cybersecurity / AI-ML**
 
 **Sonali Kumari**
 
@@ -15,6 +15,78 @@ CyberSentinel is an end-to-end AI/ML system that learns "normal" access behavior
 **Demo Video:** [Watch on Google Drive](https://drive.google.com/file/d/1pWk3mUrOpDxayyCU1uWudkfTgAxAWX5S/view?usp=sharing)
 
 ---
+
+## Problem Statement (Honeywell Hackathon 2026 — Q4)
+
+> *"Every login, API call, or device connection leaves a behavioural trail — timing, location, access patterns, command sequences, protocol usage. Traditional signature-based security (fixed rules, known malware hashes) fails against novel or slow, low-and-slow intrusions."*
+
+**Objective:** Design and build an AI/ML system that models "normal" access and connection behaviour for users and devices, detects intrusions or compromised-credential activity in near real-time, and classifies the type of anomaly — with an explainable risk score.
+
+**5 Challenges to Handle:**
+
+| Challenge | Description |
+|-----------|-------------|
+| Sequential & behavioural data | Access events over time, not static snapshots |
+| Extreme class imbalance | True intrusions are a tiny fraction of total access events |
+| Concept drift | Legitimate behaviour evolves and should not be permanently flagged |
+| Explainability | SOC analyst needs to know WHY an event was flagged |
+| Cold-start problem | How to score a brand-new user or device with no history |
+
+**Synthetic Data Schema:**
+
+| Field | Description |
+|-------|-------------|
+| entity_id | user_id or device_id |
+| entity_type | user / service_account / edge_device |
+| timestamp | access or connection time |
+| source_ip / geo_location | origin of the access |
+| resource_accessed | file, endpoint, port, or device function |
+| auth_method | password, token, certificate, biometric |
+| session_duration | length of connection |
+| command_sequence | ordered list of actions taken |
+| device_fingerprint | OS/firmware version, MAC address, protocol used |
+| label | normal / anomaly_type (hidden at inference) |
+
+**7 Required Deliverables:**
+
+1. Synthetic data generator with documented behavioural assumptions and injected attack taxonomy
+2. Baseline profiling model — per-entity "normal" behaviour representation
+3. Detection model — sequence-aware approach (LSTM/Transformer) to flag deviations
+4. Anomaly classification — not just "anomalous," but which attack category it resembles
+5. Explainability layer — feature attribution per alert
+6. Analyst-facing dashboard — ranked alert queue, risk score, contributing factors, entity history view
+7. Report — assumptions, metrics and known limitations
+
+**Evaluation Criteria:** Detection accuracy on imbalanced labels, correct anomaly-type classification, false positive rate at top 1%, explainability/analyst usability, handling cold-start and concept drift, system design & scalability, report clarity.
+
+---
+
+## Our Approach
+
+We built a **3-paradigm ensemble** — combining unsupervised, sequence-aware, and supervised models — to cover the full spectrum of anomaly detection:
+
+| Challenge | Our Solution |
+|-----------|-------------|
+| Sequential & behavioural data | LSTM Autoencoder with sliding window of 10 events per entity learns temporal patterns |
+| Extreme class imbalance | SMOTE oversampling for XGBoost + autoencoders trained on normal events only |
+| Concept drift | Page-Hinkley test with exponential decay (0.95) detects and adapts to behavioral changes |
+| Explainability | SHAP TreeExplainer provides per-alert feature attribution + natural language reasons |
+| Cold-start problem | Peer group profiling scores new entities against similar entity-type statistics |
+
+**3 Production Models Selected from 6 Trained:**
+- **Isolation Forest** (unsupervised) — catches novel/zero-day attacks without labels
+- **LSTM Autoencoder** (sequence-aware) — 97.6% precision temporal anomaly detection
+- **XGBoost** (supervised) — 8-class attack type classification with best F1 (0.838)
+
+**Risk Score Formula:**
+```
+Risk = (0.35 × IF_score + 0.35 × LSTM_error + 0.20 × XGB_confidence + 0.10 × History) × 100
+```
+
+Each alert is ranked by risk score, assigned a severity tier (Critical/High/Medium/Low), explained with SHAP feature attribution, and presented through a 10-page Streamlit dashboard.
+
+---
+
 
 ## System Architecture
 
