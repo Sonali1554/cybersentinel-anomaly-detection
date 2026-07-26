@@ -14,7 +14,15 @@ An AI/ML system that models "normal" access and connection behaviour for users a
 
 👉 **https://cybersentinel-anomaly-detection.onrender.com**
 
-⭐ If you like this project, don't forget to **star the repository!**
+## 🎥 Project Demo
+
+📺 **Watch the complete project walkthrough and live demonstration**
+
+▶️ **Demo Video:**  
+https://www.veed.io/view/d8b90011-f115-493a-aea4-08cd0d79eced?source=editor&panel=share
+
+💡 *The demo showcases the complete workflow—from anomaly detection and AI models to the interactive Streamlit dashboard and explainable risk analysis.*
+
 
 ### 1. Install Dependencies
 
