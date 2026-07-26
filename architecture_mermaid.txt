@@ -1,0 +1,57 @@
+flowchart TB
+    subgraph S["CYBERSENTINEL - AI-Powered Behavioral Anomaly Detection"]
+
+        subgraph D["1. Data"]
+            A1["Attack Injection\n7 types"] --> A2["Data Generator\n10K events"]
+        end
+
+        subgraph F["2. Features"]
+            F1["16 Features\nScaled"]
+        end
+
+        subgraph M["3. Models"]
+            IF["Isolation Forest"] --- SVM["One-Class SVM"]
+            LSTM["LSTM"] --- TRANS["Transformer"]
+            XGB["XGBoost"] --- RF["Random Forest"]
+        end
+
+        subgraph R["4. Risk + SHAP"]
+            RS["Risk Score\nEnsemble"] --- SH["SHAP Explainer"]
+        end
+
+        subgraph O["5. Output"]
+            AQ["Alert Queue"] --- DB["Dashboard"]
+        end
+
+        subgraph EV["6. Evaluation"]
+            MT["F1 0.84 | AUC 0.97"]
+        end
+
+        subgraph AD["Adaptive"]
+            CS["Cold-Start"] --- CD["Concept Drift"]
+        end
+
+        D --> F
+        F --> M
+        M --> R
+        R --> O
+        R --> EV
+        AD -.-> M
+        AD -.-> R
+
+    end
+
+    classDef data fill:#1e3a5f,stroke:#3B82F6,color:#93C5FD,stroke-width:2px
+    classDef feature fill:#2d1f5e,stroke:#8B5CF6,color:#C4B5FD,stroke-width:2px
+    classDef model fill:#0a2e1a,stroke:#00FF88,color:#00FF88,stroke-width:2px
+    classDef risk fill:#3d2607,stroke:#F59E0B,color:#FBBF24,stroke-width:2px
+    classDef output fill:#3b0d0d,stroke:#DC2626,color:#F87171,stroke-width:2px
+    classDef adaptive fill:#0d2d2a,stroke:#14B8A6,color:#2DD4BF,stroke-width:2px
+
+    class A1,A2 data
+    class F1 feature
+    class IF,SVM,LSTM,TRANS,XGB,RF model
+    class RS,SH risk
+    class AQ,DB output
+    class CS,CD adaptive
+    class MT output

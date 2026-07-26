@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberSentinel — System Architecture</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0A0E17;
+    color: #E5E7EB;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    min-height: 100vh;
+  }
+
+  .container {
+    width: 1400px;
+    max-width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .title h1 {
+    font-size: 2rem;
+    color: #00FF88;
+    letter-spacing: 3px;
+    text-shadow: 0 0 20px rgba(0,255,136,0.3);
+  }
+  .title p {
+    color: #6B7280;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+
+  .flow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .arrow-row {
+    display: flex;
+    justify-content: center;
+    padding: 4px 0;
+  }
+  .arrow-row svg { display: block; }
+
+  .box {
+    border-radius: 12px;
+    padding: 18px 20px;
+    position: relative;
+    min-width: 180px;
+    flex: 1;
+    max-width: 320px;
+  }
+
+  .box-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .box-header .icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .box-header h3 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .box-body {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #9CA3AF;
+  }
+  .box-body ul {
+    list-style: none;
+    padding: 0;
+  }
+  .box-body li {
+    padding: 2px 0;
+    padding-left: 14px;
+    position: relative;
+  }
+  .box-body li::before {
+    content: "›";
+    position: absolute;
+    left: 2px;
+    color: #00FF88;
+    font-weight: bold;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+  }
+
+  /* ── Layer Styles ────────────────── */
+  .layer-label {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    flex-shrink: 0;
+  }
+
+  /* Data layer */
+  .data { background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.3); }
+  .data .box-header h3 { color: #60A5FA; }
+  .data .icon { background: rgba(59,130,246,0.2); color: #60A5FA; }
+  .data .tag { background: rgba(59,130,246,0.15); color: #60A5FA; }
+  .label-data { background: rgba(59,130,246,0.1); color: #60A5FA; border: 1px solid rgba(59,130,246,0.2); }
+
+  /* Feature layer */
+  .feature { background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.3); }
+  .feature .box-header h3 { color: #A78BFA; }
+  .feature .icon { background: rgba(139,92,246,0.2); color: #A78BFA; }
+  .feature .tag { background: rgba(139,92,246,0.15); color: #A78BFA; }
+  .label-feature { background: rgba(139,92,246,0.1); color: #A78BFA; border: 1px solid rgba(139,92,246,0.2); }
+
+  /* Model layer */
+  .model { background: rgba(0,255,136,0.06); border: 1px solid rgba(0,255,136,0.25); }
+  .model .box-header h3 { color: #00FF88; }
+  .model .icon { background: rgba(0,255,136,0.15); color: #00FF88; }
+  .model .tag { background: rgba(0,255,136,0.12); color: #00FF88; }
+  .label-model { background: rgba(0,255,136,0.08); color: #00FF88; border: 1px solid rgba(0,255,136,0.2); }
+
+  /* Risk layer */
+  .risk { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.3); }
+  .risk .box-header h3 { color: #FBBF24; }
+  .risk .icon { background: rgba(245,158,11,0.2); color: #FBBF24; }
+  .risk .tag { background: rgba(245,158,11,0.15); color: #FBBF24; }
+  .label-risk { background: rgba(245,158,11,0.08); color: #FBBF24; border: 1px solid rgba(245,158,11,0.2); }
+
+  /* Output layer */
+  .output { background: rgba(220,38,38,0.08); border: 1px solid rgba(220,38,38,0.3); }
+  .output .box-header h3 { color: #F87171; }
+  .output .icon { background: rgba(220,38,38,0.2); color: #F87171; }
+  .output .tag { background: rgba(220,38,38,0.15); color: #F87171; }
+  .label-output { background: rgba(220,38,38,0.08); color: #F87171; border: 1px solid rgba(220,38,38,0.2); }
+
+  /* Adaptive layer */
+  .adaptive { background: rgba(20,184,166,0.08); border: 1px solid rgba(20,184,166,0.3); }
+  .adaptive .box-header h3 { color: #2DD4BF; }
+  .adaptive .icon { background: rgba(20,184,166,0.2); color: #2DD4BF; }
+  .adaptive .tag { background: rgba(20,184,166,0.15); color: #2DD4BF; }
+  .label-adaptive { background: rgba(20,184,166,0.08); color: #2DD4BF; border: 1px solid rgba(20,184,166,0.2); }
+
+  /* Formula box */
+  .formula {
+    text-align: center;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 0.8rem;
+    color: #FBBF24;
+    padding: 10px 20px;
+    background: rgba(245,158,11,0.06);
+    border: 1px dashed rgba(245,158,11,0.3);
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* Side boxes */
+  .side-section {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="title">
+    <h1>&#x1f6e1;&#xfe0f; CYBERSENTINEL — SYSTEM ARCHITECTURE</h1>
+    <p>AI-POWERED BEHAVIORAL ANOMALY DETECTION FOR CYBERSECURITY</p>
+  </div>
+
+  <div class="flow">
+
+    <!-- ═══ LAYER 1: DATA INGESTION ═══ -->
+    <div class="row">
+      <div class="layer-label label-data">DATA</div>
+      <div class="box data">
+        <div class="box-header">
+          <div class="icon">&#x1f4ca;</div>
+          <h3>Synthetic Data Generator</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>10,000+ access log events</li>
+            <li>200 entities (users, devices, services)</li>
+            <li>Per-entity behavioural profiles</li>
+          </ul>
+          <span class="tag">DELIVERABLE 1</span>
+        </div>
+      </div>
+      <div class="box data">
+        <div class="box-header">
+          <div class="icon">&#x26a0;</div>
+          <h3>Attack Injection (7 Types)</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>Brute Force &bull; Credential Stuffing</li>
+            <li>Impossible Travel &bull; Lateral Movement</li>
+            <li>Device Spoofing &bull; Low-and-Slow</li>
+            <li>Insider Drift</li>
+          </ul>
+          <span class="tag">~2.5% ANOMALY RATE</span>
+        </div>
+      </div>
+      <div class="box data">
+        <div class="box-header">
+          <div class="icon">&#x1f4dd;</div>
+          <h3>Schema (10 Fields)</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>entity_id, entity_type, timestamp</li>
+            <li>source_ip, geo_location, auth_method</li>
+            <li>resource_accessed, session_duration</li>
+            <li>command_sequence, device_fingerprint</li>
+          </ul>
+          <span class="tag">LABELED FOR EVALUATION</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow -->
+    <div class="arrow-row">
+      <svg width="40" height="30"><polygon points="20,30 8,8 32,8" fill="#3B82F6" opacity="0.6"/></svg>
+    </div>
+
+    <!-- ═══ LAYER 2: FEATURE ENGINEERING ═══ -->
+    <div class="row">
+      <div class="layer-label label-feature">FEATURES</div>
+      <div class="box feature" style="max-width: 600px;">
+        <div class="box-header">
+          <div class="icon">&#x2699;</div>
+          <h3>Feature Engineering Pipeline</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li><strong>Temporal:</strong> hour, is_night, time_gap_seconds, day_of_week</li>
+            <li><strong>Behavioral:</strong> session_duration, duration_deviation, cmd_count, has_suspicious_cmd</li>
+            <li><strong>Geo-spatial:</strong> geo_velocity_kmh, cumulative_unique_resources</li>
+            <li><strong>Encoded:</strong> entity_type_enc, auth_method_enc &nbsp;→&nbsp; StandardScaler normalization</li>
+          </ul>
+          <span class="tag">16 ENGINEERED FEATURES</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow -->
+    <div class="arrow-row">
+      <svg width="40" height="30"><polygon points="20,30 8,8 32,8" fill="#8B5CF6" opacity="0.6"/></svg>
+    </div>
+
+    <!-- ═══ LAYER 3: MODEL ENSEMBLE (3 PARADIGMS) ═══ -->
+    <div class="row">
+      <div class="layer-label label-model">MODELS</div>
+      <div class="box model">
+        <div class="box-header">
+          <div class="icon">&#x1f50d;</div>
+          <h3>Unsupervised</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li><strong>Isolation Forest</strong> — 200 trees</li>
+            <li><strong>One-Class SVM</strong> — RBF kernel</li>
+            <li>Trained on normal data only</li>
+            <li>Statistical per-entity profiling</li>
+          </ul>
+          <span class="tag">DELIVERABLE 2</span>
+        </div>
+      </div>
+      <div class="box model">
+        <div class="box-header">
+          <div class="icon">&#x1f9e0;</div>
+          <h3>Sequence-Aware</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li><strong>LSTM Autoencoder</strong> — encoder-decoder</li>
+            <li><strong>Transformer</strong> — 4-head self-attention</li>
+            <li>Sliding window (10 events/entity)</li>
+            <li>Reconstruction error → anomaly score</li>
+          </ul>
+          <span class="tag">DELIVERABLE 3</span>
+        </div>
+      </div>
+      <div class="box model">
+        <div class="box-header">
+          <div class="icon">&#x1f3af;</div>
+          <h3>Supervised</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li><strong>XGBoost</strong> — 300 trees, 8 classes</li>
+            <li><strong>Random Forest</strong> — comparison</li>
+            <li>SMOTE for class imbalance</li>
+            <li>Multi-class attack classification</li>
+          </ul>
+          <span class="tag">DELIVERABLE 4</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow -->
+    <div class="arrow-row">
+      <svg width="40" height="30"><polygon points="20,30 8,8 32,8" fill="#00FF88" opacity="0.6"/></svg>
+    </div>
+
+    <!-- ═══ LAYER 4: RISK SCORING ═══ -->
+    <div class="row">
+      <div class="layer-label label-risk">RISK</div>
+      <div class="box risk" style="max-width: 500px;">
+        <div class="box-header">
+          <div class="icon">&#x26a1;</div>
+          <h3>Ensemble Risk Score</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>Weighted combination of all model outputs</li>
+            <li>Severity tiers: Critical (&gt;80) / High (&gt;60) / Medium (&gt;40) / Low</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box risk" style="max-width: 500px;">
+        <div class="box-header">
+          <div class="icon">&#x1f4a1;</div>
+          <h3>Explainability (SHAP)</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>Per-alert feature attribution</li>
+            <li>Natural language explanations</li>
+            <li>Top contributing factors for SOC analysts</li>
+          </ul>
+          <span class="tag">DELIVERABLE 5</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formula -->
+    <div class="formula">
+      Risk = 0.35 &times; IF_score + 0.35 &times; LSTM_score + 0.20 &times; classifier_confidence + 0.10 &times; entity_history
+    </div>
+
+    <!-- Arrow -->
+    <div class="arrow-row">
+      <svg width="40" height="30"><polygon points="20,30 8,8 32,8" fill="#F59E0B" opacity="0.6"/></svg>
+    </div>
+
+    <!-- ═══ LAYER 5: OUTPUT ═══ -->
+    <div class="row">
+      <div class="layer-label label-output">OUTPUT</div>
+      <div class="box output">
+        <div class="box-header">
+          <div class="icon">&#x1f6a8;</div>
+          <h3>Alert Queue</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>Ranked by risk score</li>
+            <li>Severity-based filtering</li>
+            <li>Attack type classification</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box output">
+        <div class="box-header">
+          <div class="icon">&#x1f4bb;</div>
+          <h3>Analyst Dashboard</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>10-page Streamlit (dark cyber theme)</li>
+            <li>World map, entity timeline, model comparison</li>
+            <li>Real-time streaming simulation</li>
+          </ul>
+          <span class="tag">DELIVERABLE 6</span>
+        </div>
+      </div>
+      <div class="box output">
+        <div class="box-header">
+          <div class="icon">&#x1f4c4;</div>
+          <h3>Evaluation Metrics</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>F1: 0.838 &bull; AUC: 0.968</li>
+            <li>Precision@1%: 100%</li>
+            <li>FPR: 0.19%</li>
+          </ul>
+          <span class="tag">DELIVERABLE 7</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow -->
+    <div class="arrow-row">
+      <svg width="40" height="20"><polygon points="20,20 8,4 32,4" fill="#DC2626" opacity="0.5"/></svg>
+    </div>
+
+    <!-- ═══ LAYER 6: ADAPTIVE ═══ -->
+    <div class="row">
+      <div class="layer-label label-adaptive">ADAPTIVE</div>
+      <div class="box adaptive">
+        <div class="box-header">
+          <div class="icon">&#x1f504;</div>
+          <h3>Concept Drift</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>Page-Hinkley drift detection</li>
+            <li>Exponential decay (factor: 0.95)</li>
+            <li>Sliding window of 500 events</li>
+            <li>Adaptive threshold recalibration</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box adaptive">
+        <div class="box-header">
+          <div class="icon">&#x1f195;</div>
+          <h3>Cold-Start Handling</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>Peer group profiling by entity type</li>
+            <li>Elevated monitoring (first 20 events)</li>
+            <li>Linear transition: peer → individual</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box adaptive">
+        <div class="box-header">
+          <div class="icon">&#x26a1;</div>
+          <h3>Streaming Architecture</h3>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>Kafka ingestion layer</li>
+            <li>Spark Streaming processing</li>
+            <li>TF Serving for model inference</li>
+            <li>End-to-end latency &lt;500ms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

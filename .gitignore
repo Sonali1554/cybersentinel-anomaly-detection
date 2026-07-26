@@ -1,0 +1,53 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Generated data (regenerate via: python train_pipeline.py)
+data/*.csv
+data/*.json
+
+# Trained models (regenerate via: python train_pipeline.py)
+models/*.pkl
+models/*.keras
+models/*.h5
+models/*.joblib
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+node_modules/
+
+# Internal planning (not for evaluators)
+PLAN.md
+
+# Report markdown (final PDF version will be pushed instead)
+report/report.md
+
+# Logs
+*.log
