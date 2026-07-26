@@ -8,6 +8,14 @@ An AI/ML system that models "normal" access and connection behaviour for users a
 
 ## Quick Start
 
+## 🚀 Live Demo
+
+🌍 **Experience CyberSentinel AI here:**
+
+👉 **https://cybersentinel-anomaly-detection.onrender.com**
+
+⭐ If you like this project, don't forget to **star the repository!**
+
 ### 1. Install Dependencies
 
 ```bash
