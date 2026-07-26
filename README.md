@@ -1,6 +1,9 @@
-# CyberSentinel — AI-Powered Behavioral Anomaly Detection for Cybersecurity
+<table><tr>
+<td><img src="https://github.com/user-attachments/assets/17fa33be-52c7-4079-9afa-f0bae2d904ba" alt="CyberSentinel Logo" width="100"/></td>
+<td><h1>CyberSentinel — AI-Powered Behavioral Anomaly Detection for Cybersecurity</h1></td>
+</tr></table>
 
-**Honeywell Hackathon 2026 | Q4 —  | Theme: Cybersecurity / AI-ML**
+**Honeywell Hackathon 2026 | Q4 — Software | Theme: Cybersecurity / AI-ML**
 
 **Sonali Kumari**
 
