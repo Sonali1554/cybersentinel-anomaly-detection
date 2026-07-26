@@ -1,0 +1,4344 @@
+{
+  "USR_0000": {
+    "entity_id": "USR_0000",
+    "entity_type": "user",
+    "preferred_hour": 13,
+    "hour_std": 2.19,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/email/sent",
+      "/apps/crm/dashboard",
+      "/apps/hr/timesheet",
+      "/apps/erp/inventory",
+      "/files/docs/contracts"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 814.9,
+    "os": "Ubuntu 22.04",
+    "mac": "22:39:0c:8c:7d:72",
+    "protocol": "VPN",
+    "events_per_day": 4.9
+  },
+  "DEV_0001": {
+    "entity_id": "DEV_0001",
+    "entity_type": "edge_device",
+    "preferred_hour": 10,
+    "hour_std": 1.92,
+    "base_locations": [
+      "London"
+    ],
+    "typical_resources": [
+      "/control/valve/set",
+      "/logs/system",
+      "/telemetry/pressure",
+      "/telemetry/vibration",
+      "/telemetry/temperature",
+      "/control/pump/start"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 71.1,
+    "os": "Zephyr 3.4",
+    "mac": "3a:d8:10:0f:2f:6f",
+    "protocol": "CoAP",
+    "events_per_day": 48.8
+  },
+  "USR_0002": {
+    "entity_id": "USR_0002",
+    "entity_type": "user",
+    "preferred_hour": 18,
+    "hour_std": 2.41,
+    "base_locations": [
+      "New York"
+    ],
+    "typical_resources": [
+      "/files/docs/policy.pdf",
+      "/files/docs/contracts",
+      "/files/reports/quarterly.xlsx",
+      "/email/sent",
+      "/apps/confluence/wiki",
+      "/apps/jira/board"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1304.0,
+    "os": "macOS 14",
+    "mac": "c2:d6:70:e5:8e:03",
+    "protocol": "HTTPS",
+    "events_per_day": 9.3
+  },
+  "DEV_0003": {
+    "entity_id": "DEV_0003",
+    "entity_type": "edge_device",
+    "preferred_hour": 11,
+    "hour_std": 1.05,
+    "base_locations": [
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/control/valve/set",
+      "/control/pump/start",
+      "/config/network",
+      "/telemetry/pressure",
+      "/diagnostics/self_test"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 217.8,
+    "os": "Zephyr 3.4",
+    "mac": "16:8e:4f:6e:ac:34",
+    "protocol": "Modbus-TCP",
+    "events_per_day": 24.7
+  },
+  "USR_0004": {
+    "entity_id": "USR_0004",
+    "entity_type": "user",
+    "preferred_hour": 9,
+    "hour_std": 1.57,
+    "base_locations": [
+      "San Francisco",
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/apps/slack",
+      "/apps/hr/timesheet",
+      "/email/sent"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2304.9,
+    "os": "Windows 11",
+    "mac": "14:87:16:eb:3f:c1",
+    "protocol": "HTTPS",
+    "events_per_day": 5.0
+  },
+  "SVC_0005": {
+    "entity_id": "SVC_0005",
+    "entity_type": "service_account",
+    "preferred_hour": 6,
+    "hour_std": 0.51,
+    "base_locations": [
+      "Dubai",
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/api/v1/db/query",
+      "/api/v1/backup/trigger",
+      "/api/v1/deploy/status",
+      "/api/v1/logs/audit"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 40.0,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "fc:62:23:17:74:94",
+    "protocol": "HTTPS",
+    "events_per_day": 27.8
+  },
+  "USR_0006": {
+    "entity_id": "USR_0006",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.36,
+    "base_locations": [
+      "New York"
+    ],
+    "typical_resources": [
+      "/apps/hr/timesheet",
+      "/apps/erp/inventory",
+      "/files/docs/policy.pdf",
+      "/email/sent",
+      "/files/shared/presentations",
+      "/apps/jira/board"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 413.5,
+    "os": "Ubuntu 22.04",
+    "mac": "5e:c2:8e:e8:ba:53",
+    "protocol": "VPN",
+    "events_per_day": 13.9
+  },
+  "USR_0007": {
+    "entity_id": "USR_0007",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.27,
+    "base_locations": [
+      "Tokyo",
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/email/inbox",
+      "/apps/crm/dashboard",
+      "/apps/slack",
+      "/email/sent"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2104.1,
+    "os": "Windows 11",
+    "mac": "60:24:57:7d:53:ec",
+    "protocol": "VPN",
+    "events_per_day": 5.2
+  },
+  "USR_0008": {
+    "entity_id": "USR_0008",
+    "entity_type": "user",
+    "preferred_hour": 8,
+    "hour_std": 2.16,
+    "base_locations": [
+      "Chicago",
+      "Paris"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/files/docs/policy.pdf",
+      "/files/reports/quarterly.xlsx",
+      "/apps/confluence/wiki"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 2700.0,
+    "os": "Windows 11",
+    "mac": "66:a6:1c:75:10:a1",
+    "protocol": "HTTPS",
+    "events_per_day": 6.9
+  },
+  "USR_0009": {
+    "entity_id": "USR_0009",
+    "entity_type": "user",
+    "preferred_hour": 13,
+    "hour_std": 1.78,
+    "base_locations": [
+      "Beijing",
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/email/sent",
+      "/email/inbox",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1195.5,
+    "os": "macOS 13",
+    "mac": "42:6c:ff:ca:ea:49",
+    "protocol": "VPN",
+    "events_per_day": 12.9
+  },
+  "SVC_0010": {
+    "entity_id": "SVC_0010",
+    "entity_type": "service_account",
+    "preferred_hour": 12,
+    "hour_std": 0.64,
+    "base_locations": [
+      "San Francisco",
+      "Paris"
+    ],
+    "typical_resources": [
+      "/api/v1/backup/trigger",
+      "/api/v1/auth/token",
+      "/api/v1/users/list"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 53.7,
+    "os": "Alpine 3.18",
+    "mac": "82:db:cc:b9:70:46",
+    "protocol": "HTTPS",
+    "events_per_day": 51.6
+  },
+  "DEV_0011": {
+    "entity_id": "DEV_0011",
+    "entity_type": "edge_device",
+    "preferred_hour": 7,
+    "hour_std": 1.01,
+    "base_locations": [
+      "Sydney",
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/config/network",
+      "/control/pump/start",
+      "/firmware/check_update"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 486.7,
+    "os": "VxWorks 7",
+    "mac": "62:38:4e:51:d8:20",
+    "protocol": "CoAP",
+    "events_per_day": 34.2
+  },
+  "SVC_0012": {
+    "entity_id": "SVC_0012",
+    "entity_type": "service_account",
+    "preferred_hour": 9,
+    "hour_std": 0.86,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/api/v1/config/update",
+      "/api/v1/logs/audit",
+      "/api/v1/auth/token",
+      "/api/v1/certs/renew",
+      "/api/v1/db/query"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 56.7,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "1c:80:05:3a:88:ae",
+    "protocol": "AMQP",
+    "events_per_day": 27.6
+  },
+  "USR_0013": {
+    "entity_id": "USR_0013",
+    "entity_type": "user",
+    "preferred_hour": 13,
+    "hour_std": 1.47,
+    "base_locations": [
+      "New York"
+    ],
+    "typical_resources": [
+      "/files/reports/quarterly.xlsx",
+      "/apps/jira/board",
+      "/apps/slack",
+      "/files/shared/presentations",
+      "/email/inbox"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 1206.6,
+    "os": "Windows 11",
+    "mac": "d6:01:86:5b:36:98",
+    "protocol": "HTTPS",
+    "events_per_day": 9.7
+  },
+  "SVC_0014": {
+    "entity_id": "SVC_0014",
+    "entity_type": "service_account",
+    "preferred_hour": 2,
+    "hour_std": 0.62,
+    "base_locations": [
+      "Paris",
+      "Tokyo"
+    ],
+    "typical_resources": [
+      "/api/v1/data/export",
+      "/api/v1/certs/renew",
+      "/api/v1/logs/audit"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 32.1,
+    "os": "Alpine 3.18",
+    "mac": "7c:4e:bf:52:00:a5",
+    "protocol": "HTTPS",
+    "events_per_day": 40.5
+  },
+  "SVC_0015": {
+    "entity_id": "SVC_0015",
+    "entity_type": "service_account",
+    "preferred_hour": 8,
+    "hour_std": 1.21,
+    "base_locations": [
+      "Beijing"
+    ],
+    "typical_resources": [
+      "/api/v1/certs/renew",
+      "/api/v1/logs/audit",
+      "/api/v1/auth/token",
+      "/api/v1/config/update",
+      "/api/v1/metrics/collect",
+      "/api/v1/deploy/status"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 8.6,
+    "os": "Debian 12",
+    "mac": "14:9d:7a:1d:7b:28",
+    "protocol": "AMQP",
+    "events_per_day": 70.9
+  },
+  "USR_0016": {
+    "entity_id": "USR_0016",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.84,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/apps/erp/inventory",
+      "/email/sent"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1654.3,
+    "os": "macOS 14",
+    "mac": "86:40:41:f3:54:87",
+    "protocol": "VPN",
+    "events_per_day": 12.1
+  },
+  "SVC_0017": {
+    "entity_id": "SVC_0017",
+    "entity_type": "service_account",
+    "preferred_hour": 3,
+    "hour_std": 1.44,
+    "base_locations": [
+      "Tokyo"
+    ],
+    "typical_resources": [
+      "/api/v1/config/update",
+      "/api/v1/metrics/collect",
+      "/api/v1/db/query",
+      "/api/v1/backup/trigger",
+      "/api/v1/auth/token"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 111.9,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "e6:66:9f:cc:bf:e0",
+    "protocol": "SSH",
+    "events_per_day": 84.6
+  },
+  "USR_0018": {
+    "entity_id": "USR_0018",
+    "entity_type": "user",
+    "preferred_hour": 15,
+    "hour_std": 1.16,
+    "base_locations": [
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/apps/jira/board",
+      "/files/docs/policy.pdf",
+      "/files/docs/contracts",
+      "/files/shared/presentations",
+      "/email/sent",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3245.4,
+    "os": "macOS 14",
+    "mac": "96:73:20:ad:0a:75",
+    "protocol": "SSH",
+    "events_per_day": 9.5
+  },
+  "USR_0019": {
+    "entity_id": "USR_0019",
+    "entity_type": "user",
+    "preferred_hour": 16,
+    "hour_std": 1.18,
+    "base_locations": [
+      "Beijing"
+    ],
+    "typical_resources": [
+      "/apps/erp/inventory",
+      "/files/docs/policy.pdf",
+      "/email/sent",
+      "/apps/confluence/wiki"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1052.2,
+    "os": "macOS 14",
+    "mac": "82:75:22:10:a9:24",
+    "protocol": "SSH",
+    "events_per_day": 8.1
+  },
+  "SVC_0020": {
+    "entity_id": "SVC_0020",
+    "entity_type": "service_account",
+    "preferred_hour": 19,
+    "hour_std": 0.85,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/api/v1/deploy/status",
+      "/api/v1/config/update",
+      "/api/v1/auth/token",
+      "/api/v1/db/query"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 53.0,
+    "os": "Debian 12",
+    "mac": "ce:6d:43:f2:7c:f2",
+    "protocol": "HTTPS",
+    "events_per_day": 37.8
+  },
+  "USR_0021": {
+    "entity_id": "USR_0021",
+    "entity_type": "user",
+    "preferred_hour": 9,
+    "hour_std": 1.4,
+    "base_locations": [
+      "Beijing"
+    ],
+    "typical_resources": [
+      "/email/inbox",
+      "/apps/crm/dashboard",
+      "/files/docs/policy.pdf",
+      "/apps/jira/board",
+      "/apps/confluence/wiki"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2012.0,
+    "os": "macOS 14",
+    "mac": "dc:dc:b5:d8:d2:ef",
+    "protocol": "RDP",
+    "events_per_day": 11.4
+  },
+  "USR_0022": {
+    "entity_id": "USR_0022",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 1.1,
+    "base_locations": [
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/email/sent",
+      "/apps/erp/inventory",
+      "/apps/confluence/wiki",
+      "/apps/crm/dashboard",
+      "/apps/slack",
+      "/email/inbox"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1940.9,
+    "os": "Windows 11",
+    "mac": "30:1f:ce:ad:37:7f",
+    "protocol": "HTTPS",
+    "events_per_day": 6.6
+  },
+  "SVC_0023": {
+    "entity_id": "SVC_0023",
+    "entity_type": "service_account",
+    "preferred_hour": 16,
+    "hour_std": 1.5,
+    "base_locations": [
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/api/v1/backup/trigger",
+      "/api/v1/config/update",
+      "/api/v1/auth/token",
+      "/api/v1/metrics/collect"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 10.9,
+    "os": "Debian 12",
+    "mac": "de:d8:5d:8e:ec:7f",
+    "protocol": "gRPC",
+    "events_per_day": 42.3
+  },
+  "DEV_0024": {
+    "entity_id": "DEV_0024",
+    "entity_type": "edge_device",
+    "preferred_hour": 0,
+    "hour_std": 2.27,
+    "base_locations": [
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/control/pump/start",
+      "/telemetry/vibration",
+      "/config/network"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 592.3,
+    "os": "VxWorks 7",
+    "mac": "68:19:07:2f:79:55",
+    "protocol": "MQTT",
+    "events_per_day": 19.7
+  },
+  "SVC_0025": {
+    "entity_id": "SVC_0025",
+    "entity_type": "service_account",
+    "preferred_hour": 3,
+    "hour_std": 0.58,
+    "base_locations": [
+      "London"
+    ],
+    "typical_resources": [
+      "/api/v1/data/export",
+      "/api/v1/users/list",
+      "/api/v1/auth/token"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 47.3,
+    "os": "Debian 12",
+    "mac": "42:1e:54:c2:01:c7",
+    "protocol": "gRPC",
+    "events_per_day": 70.6
+  },
+  "USR_0026": {
+    "entity_id": "USR_0026",
+    "entity_type": "user",
+    "preferred_hour": 12,
+    "hour_std": 1.6,
+    "base_locations": [
+      "Sydney",
+      "Tokyo"
+    ],
+    "typical_resources": [
+      "/files/reports/quarterly.xlsx",
+      "/apps/crm/dashboard",
+      "/apps/erp/inventory",
+      "/apps/confluence/wiki",
+      "/apps/jira/board",
+      "/files/docs/policy.pdf"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 1358.6,
+    "os": "ChromeOS",
+    "mac": "94:4f:61:97:6f:1d",
+    "protocol": "SSH",
+    "events_per_day": 5.2
+  },
+  "USR_0027": {
+    "entity_id": "USR_0027",
+    "entity_type": "user",
+    "preferred_hour": 19,
+    "hour_std": 2.29,
+    "base_locations": [
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/files/docs/policy.pdf",
+      "/apps/erp/inventory",
+      "/files/shared/presentations",
+      "/apps/hr/timesheet",
+      "/email/inbox",
+      "/apps/confluence/wiki"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1989.9,
+    "os": "Windows 10",
+    "mac": "f4:1d:19:f4:50:1d",
+    "protocol": "SSH",
+    "events_per_day": 5.7
+  },
+  "USR_0028": {
+    "entity_id": "USR_0028",
+    "entity_type": "user",
+    "preferred_hour": 13,
+    "hour_std": 1.26,
+    "base_locations": [
+      "Beijing"
+    ],
+    "typical_resources": [
+      "/apps/hr/timesheet",
+      "/files/reports/quarterly.xlsx",
+      "/email/inbox",
+      "/apps/erp/inventory",
+      "/apps/confluence/wiki",
+      "/apps/slack"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 3064.4,
+    "os": "ChromeOS",
+    "mac": "f0:23:22:78:ce:3d",
+    "protocol": "SSH",
+    "events_per_day": 11.1
+  },
+  "DEV_0029": {
+    "entity_id": "DEV_0029",
+    "entity_type": "edge_device",
+    "preferred_hour": 17,
+    "hour_std": 2.85,
+    "base_locations": [
+      "Mumbai",
+      "Tokyo"
+    ],
+    "typical_resources": [
+      "/telemetry/pressure",
+      "/firmware/check_update",
+      "/telemetry/temperature",
+      "/diagnostics/self_test",
+      "/control/valve/set"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 154.5,
+    "os": "Zephyr 3.4",
+    "mac": "aa:29:d6:a1:85:68",
+    "protocol": "CoAP",
+    "events_per_day": 49.3
+  },
+  "USR_0030": {
+    "entity_id": "USR_0030",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.79,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/apps/slack",
+      "/apps/erp/inventory",
+      "/apps/crm/dashboard",
+      "/email/sent",
+      "/files/shared/presentations",
+      "/files/reports/quarterly.xlsx"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 2142.4,
+    "os": "ChromeOS",
+    "mac": "ec:ca:43:99:ea:a1",
+    "protocol": "SSH",
+    "events_per_day": 13.6
+  },
+  "SVC_0031": {
+    "entity_id": "SVC_0031",
+    "entity_type": "service_account",
+    "preferred_hour": 22,
+    "hour_std": 0.84,
+    "base_locations": [
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/api/v1/db/query",
+      "/api/v1/config/update",
+      "/api/v1/data/export",
+      "/api/v1/backup/trigger",
+      "/api/v1/users/list",
+      "/api/v1/certs/renew"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 103.5,
+    "os": "Alpine 3.18",
+    "mac": "e0:25:6d:87:43:b2",
+    "protocol": "AMQP",
+    "events_per_day": 52.4
+  },
+  "USR_0032": {
+    "entity_id": "USR_0032",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 1.96,
+    "base_locations": [
+      "New York"
+    ],
+    "typical_resources": [
+      "/files/docs/policy.pdf",
+      "/apps/crm/dashboard",
+      "/email/inbox",
+      "/files/docs/contracts",
+      "/files/reports/quarterly.xlsx",
+      "/apps/slack"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2507.7,
+    "os": "Ubuntu 22.04",
+    "mac": "aa:91:50:e0:9a:04",
+    "protocol": "VPN",
+    "events_per_day": 10.0
+  },
+  "USR_0033": {
+    "entity_id": "USR_0033",
+    "entity_type": "user",
+    "preferred_hour": 15,
+    "hour_std": 2.0,
+    "base_locations": [
+      "Berlin"
+    ],
+    "typical_resources": [
+      "/apps/confluence/wiki",
+      "/apps/erp/inventory",
+      "/apps/hr/timesheet",
+      "/files/shared/presentations",
+      "/files/docs/policy.pdf",
+      "/email/sent"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1902.5,
+    "os": "Ubuntu 22.04",
+    "mac": "44:44:87:3b:36:4f",
+    "protocol": "SSH",
+    "events_per_day": 8.4
+  },
+  "SVC_0034": {
+    "entity_id": "SVC_0034",
+    "entity_type": "service_account",
+    "preferred_hour": 8,
+    "hour_std": 0.68,
+    "base_locations": [
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/api/v1/auth/token",
+      "/api/v1/backup/trigger",
+      "/api/v1/certs/renew",
+      "/api/v1/config/update"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 90.8,
+    "os": "RHEL 9",
+    "mac": "16:68:87:fa:80:1a",
+    "protocol": "AMQP",
+    "events_per_day": 72.0
+  },
+  "USR_0035": {
+    "entity_id": "USR_0035",
+    "entity_type": "user",
+    "preferred_hour": 13,
+    "hour_std": 2.08,
+    "base_locations": [
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/files/docs/policy.pdf",
+      "/files/docs/contracts",
+      "/apps/erp/inventory",
+      "/apps/jira/board",
+      "/apps/confluence/wiki",
+      "/files/shared/presentations"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1513.5,
+    "os": "macOS 14",
+    "mac": "28:16:01:aa:42:86",
+    "protocol": "RDP",
+    "events_per_day": 6.2
+  },
+  "USR_0036": {
+    "entity_id": "USR_0036",
+    "entity_type": "user",
+    "preferred_hour": 12,
+    "hour_std": 2.47,
+    "base_locations": [
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/apps/hr/timesheet",
+      "/apps/erp/inventory",
+      "/apps/confluence/wiki",
+      "/apps/crm/dashboard",
+      "/email/inbox",
+      "/files/docs/policy.pdf"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2922.9,
+    "os": "macOS 13",
+    "mac": "d4:04:39:26:4c:12",
+    "protocol": "VPN",
+    "events_per_day": 9.0
+  },
+  "DEV_0037": {
+    "entity_id": "DEV_0037",
+    "entity_type": "edge_device",
+    "preferred_hour": 14,
+    "hour_std": 1.99,
+    "base_locations": [
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/telemetry/vibration",
+      "/control/pump/start",
+      "/firmware/check_update"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 368.9,
+    "os": "FreeRTOS 10.5",
+    "mac": "e6:dc:41:15:9d:ba",
+    "protocol": "HTTPS",
+    "events_per_day": 40.7
+  },
+  "USR_0038": {
+    "entity_id": "USR_0038",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 2.49,
+    "base_locations": [
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/email/sent",
+      "/apps/hr/timesheet",
+      "/apps/jira/board",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 1521.5,
+    "os": "macOS 13",
+    "mac": "ec:7f:34:b5:d0:4f",
+    "protocol": "VPN",
+    "events_per_day": 3.2
+  },
+  "DEV_0039": {
+    "entity_id": "DEV_0039",
+    "entity_type": "edge_device",
+    "preferred_hour": 23,
+    "hour_std": 1.66,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/control/valve/set",
+      "/diagnostics/self_test",
+      "/config/network",
+      "/firmware/check_update",
+      "/control/pump/stop"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 520.6,
+    "os": "Zephyr 3.4",
+    "mac": "cc:d3:0c:5b:aa:d2",
+    "protocol": "MQTT",
+    "events_per_day": 21.8
+  },
+  "DEV_0040": {
+    "entity_id": "DEV_0040",
+    "entity_type": "edge_device",
+    "preferred_hour": 20,
+    "hour_std": 1.38,
+    "base_locations": [
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/diagnostics/self_test",
+      "/control/pump/stop",
+      "/telemetry/pressure",
+      "/firmware/check_update",
+      "/config/network"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 360.7,
+    "os": "Linux 5.15-rt",
+    "mac": "da:88:51:37:c3:13",
+    "protocol": "CoAP",
+    "events_per_day": 47.4
+  },
+  "USR_0041": {
+    "entity_id": "USR_0041",
+    "entity_type": "user",
+    "preferred_hour": 16,
+    "hour_std": 2.4,
+    "base_locations": [
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/email/sent",
+      "/email/inbox",
+      "/files/reports/quarterly.xlsx",
+      "/apps/jira/board"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 3567.2,
+    "os": "Windows 10",
+    "mac": "a8:b3:9c:74:72:0c",
+    "protocol": "VPN",
+    "events_per_day": 4.7
+  },
+  "USR_0042": {
+    "entity_id": "USR_0042",
+    "entity_type": "user",
+    "preferred_hour": 17,
+    "hour_std": 1.44,
+    "base_locations": [
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/files/docs/policy.pdf",
+      "/apps/slack",
+      "/apps/hr/timesheet",
+      "/email/sent",
+      "/apps/jira/board",
+      "/files/shared/presentations"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2618.2,
+    "os": "macOS 13",
+    "mac": "f0:23:8e:b3:cc:a9",
+    "protocol": "SSH",
+    "events_per_day": 7.3
+  },
+  "SVC_0043": {
+    "entity_id": "SVC_0043",
+    "entity_type": "service_account",
+    "preferred_hour": 9,
+    "hour_std": 1.31,
+    "base_locations": [
+      "Tokyo",
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/api/v1/auth/token",
+      "/api/v1/data/export",
+      "/api/v1/backup/trigger"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 14.4,
+    "os": "RHEL 9",
+    "mac": "58:5b:87:13:37:de",
+    "protocol": "gRPC",
+    "events_per_day": 20.4
+  },
+  "SVC_0044": {
+    "entity_id": "SVC_0044",
+    "entity_type": "service_account",
+    "preferred_hour": 3,
+    "hour_std": 1.3,
+    "base_locations": [
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/api/v1/deploy/status",
+      "/api/v1/metrics/collect",
+      "/api/v1/auth/token",
+      "/api/v1/config/update",
+      "/api/v1/data/export",
+      "/api/v1/certs/renew"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 10.8,
+    "os": "Alpine 3.18",
+    "mac": "b4:3b:c5:61:82:16",
+    "protocol": "gRPC",
+    "events_per_day": 90.9
+  },
+  "USR_0045": {
+    "entity_id": "USR_0045",
+    "entity_type": "user",
+    "preferred_hour": 18,
+    "hour_std": 1.87,
+    "base_locations": [
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/apps/slack",
+      "/files/docs/contracts",
+      "/files/shared/presentations",
+      "/apps/jira/board",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1836.5,
+    "os": "macOS 13",
+    "mac": "a8:ba:dc:23:a9:a0",
+    "protocol": "VPN",
+    "events_per_day": 9.5
+  },
+  "SVC_0046": {
+    "entity_id": "SVC_0046",
+    "entity_type": "service_account",
+    "preferred_hour": 21,
+    "hour_std": 1.09,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/api/v1/deploy/status",
+      "/api/v1/metrics/collect",
+      "/api/v1/users/list",
+      "/api/v1/db/query",
+      "/api/v1/logs/audit",
+      "/api/v1/backup/trigger"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 39.9,
+    "os": "Debian 12",
+    "mac": "8c:9e:d1:a7:ce:97",
+    "protocol": "gRPC",
+    "events_per_day": 63.0
+  },
+  "USR_0047": {
+    "entity_id": "USR_0047",
+    "entity_type": "user",
+    "preferred_hour": 11,
+    "hour_std": 1.78,
+    "base_locations": [
+      "Paris",
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/apps/crm/dashboard",
+      "/files/shared/presentations",
+      "/apps/slack",
+      "/email/sent",
+      "/apps/confluence/wiki",
+      "/files/docs/contracts"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 1809.0,
+    "os": "Windows 11",
+    "mac": "48:59:9a:cf:00:9b",
+    "protocol": "RDP",
+    "events_per_day": 13.1
+  },
+  "USR_0048": {
+    "entity_id": "USR_0048",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.62,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/apps/crm/dashboard",
+      "/apps/erp/inventory",
+      "/files/docs/contracts",
+      "/files/shared/presentations",
+      "/files/docs/policy.pdf",
+      "/apps/slack"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 3520.3,
+    "os": "Windows 10",
+    "mac": "ca:ee:e2:e2:6d:f2",
+    "protocol": "SSH",
+    "events_per_day": 9.2
+  },
+  "USR_0049": {
+    "entity_id": "USR_0049",
+    "entity_type": "user",
+    "preferred_hour": 9,
+    "hour_std": 2.19,
+    "base_locations": [
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/apps/confluence/wiki",
+      "/email/inbox",
+      "/email/sent",
+      "/files/docs/policy.pdf",
+      "/apps/hr/timesheet",
+      "/apps/jira/board"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 1127.8,
+    "os": "macOS 14",
+    "mac": "38:91:ab:2f:78:9e",
+    "protocol": "VPN",
+    "events_per_day": 5.2
+  },
+  "USR_0050": {
+    "entity_id": "USR_0050",
+    "entity_type": "user",
+    "preferred_hour": 13,
+    "hour_std": 1.64,
+    "base_locations": [
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/files/reports/quarterly.xlsx",
+      "/email/sent",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 816.2,
+    "os": "macOS 13",
+    "mac": "e2:7d:f3:25:e9:d4",
+    "protocol": "HTTPS",
+    "events_per_day": 6.0
+  },
+  "USR_0051": {
+    "entity_id": "USR_0051",
+    "entity_type": "user",
+    "preferred_hour": 12,
+    "hour_std": 2.07,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/apps/jira/board",
+      "/apps/hr/timesheet",
+      "/apps/slack"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2005.1,
+    "os": "Windows 11",
+    "mac": "e4:fd:cc:7c:4b:02",
+    "protocol": "RDP",
+    "events_per_day": 10.9
+  },
+  "USR_0052": {
+    "entity_id": "USR_0052",
+    "entity_type": "user",
+    "preferred_hour": 11,
+    "hour_std": 1.92,
+    "base_locations": [
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/apps/hr/timesheet",
+      "/apps/confluence/wiki",
+      "/files/shared/presentations",
+      "/apps/jira/board",
+      "/email/sent",
+      "/apps/slack"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 823.5,
+    "os": "Windows 10",
+    "mac": "74:5a:ed:19:7f:3e",
+    "protocol": "RDP",
+    "events_per_day": 4.4
+  },
+  "SVC_0053": {
+    "entity_id": "SVC_0053",
+    "entity_type": "service_account",
+    "preferred_hour": 13,
+    "hour_std": 0.59,
+    "base_locations": [
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/api/v1/metrics/collect",
+      "/api/v1/auth/token",
+      "/api/v1/backup/trigger",
+      "/api/v1/users/list"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 85.9,
+    "os": "Alpine 3.18",
+    "mac": "72:e2:da:e4:51:f3",
+    "protocol": "gRPC",
+    "events_per_day": 57.9
+  },
+  "USR_0054": {
+    "entity_id": "USR_0054",
+    "entity_type": "user",
+    "preferred_hour": 16,
+    "hour_std": 2.15,
+    "base_locations": [
+      "Paris",
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/email/inbox",
+      "/apps/jira/board",
+      "/files/shared/presentations",
+      "/files/reports/quarterly.xlsx",
+      "/apps/hr/timesheet",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1731.7,
+    "os": "Ubuntu 22.04",
+    "mac": "b6:f8:7a:8c:e1:27",
+    "protocol": "HTTPS",
+    "events_per_day": 7.8
+  },
+  "USR_0055": {
+    "entity_id": "USR_0055",
+    "entity_type": "user",
+    "preferred_hour": 16,
+    "hour_std": 2.42,
+    "base_locations": [
+      "London",
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/apps/hr/timesheet",
+      "/email/inbox",
+      "/apps/slack",
+      "/files/docs/contracts",
+      "/files/reports/quarterly.xlsx",
+      "/files/shared/presentations"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2365.3,
+    "os": "macOS 13",
+    "mac": "62:a3:29:46:4d:76",
+    "protocol": "RDP",
+    "events_per_day": 9.0
+  },
+  "SVC_0056": {
+    "entity_id": "SVC_0056",
+    "entity_type": "service_account",
+    "preferred_hour": 0,
+    "hour_std": 1.04,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/api/v1/metrics/collect",
+      "/api/v1/db/query",
+      "/api/v1/deploy/status",
+      "/api/v1/backup/trigger",
+      "/api/v1/logs/audit",
+      "/api/v1/users/list"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 78.9,
+    "os": "Alpine 3.18",
+    "mac": "6a:20:d4:d0:a9:ee",
+    "protocol": "AMQP",
+    "events_per_day": 22.1
+  },
+  "DEV_0057": {
+    "entity_id": "DEV_0057",
+    "entity_type": "edge_device",
+    "preferred_hour": 19,
+    "hour_std": 2.15,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/telemetry/pressure",
+      "/config/network",
+      "/telemetry/temperature",
+      "/control/pump/stop",
+      "/control/pump/start",
+      "/diagnostics/self_test"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 498.1,
+    "os": "Linux 5.15-rt",
+    "mac": "f0:c7:0a:c2:f4:03",
+    "protocol": "CoAP",
+    "events_per_day": 42.8
+  },
+  "USR_0058": {
+    "entity_id": "USR_0058",
+    "entity_type": "user",
+    "preferred_hour": 18,
+    "hour_std": 1.58,
+    "base_locations": [
+      "Dubai",
+      "London"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/files/reports/quarterly.xlsx",
+      "/apps/confluence/wiki",
+      "/email/sent"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1204.1,
+    "os": "Windows 10",
+    "mac": "6e:d6:70:f9:70:8b",
+    "protocol": "HTTPS",
+    "events_per_day": 5.6
+  },
+  "USR_0059": {
+    "entity_id": "USR_0059",
+    "entity_type": "user",
+    "preferred_hour": 8,
+    "hour_std": 1.06,
+    "base_locations": [
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/email/inbox",
+      "/email/sent",
+      "/apps/confluence/wiki",
+      "/apps/slack",
+      "/files/docs/policy.pdf"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1352.6,
+    "os": "Ubuntu 22.04",
+    "mac": "e8:cf:54:ef:41:0d",
+    "protocol": "SSH",
+    "events_per_day": 13.1
+  },
+  "USR_0060": {
+    "entity_id": "USR_0060",
+    "entity_type": "user",
+    "preferred_hour": 16,
+    "hour_std": 1.51,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/apps/confluence/wiki",
+      "/apps/crm/dashboard",
+      "/apps/erp/inventory",
+      "/email/inbox",
+      "/files/docs/policy.pdf"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2599.2,
+    "os": "Windows 10",
+    "mac": "0c:2a:db:45:ec:5d",
+    "protocol": "RDP",
+    "events_per_day": 10.5
+  },
+  "USR_0061": {
+    "entity_id": "USR_0061",
+    "entity_type": "user",
+    "preferred_hour": 19,
+    "hour_std": 1.06,
+    "base_locations": [
+      "London"
+    ],
+    "typical_resources": [
+      "/apps/jira/board",
+      "/files/reports/quarterly.xlsx",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 885.6,
+    "os": "Ubuntu 22.04",
+    "mac": "c0:e8:a7:ac:c2:8e",
+    "protocol": "VPN",
+    "events_per_day": 12.0
+  },
+  "SVC_0062": {
+    "entity_id": "SVC_0062",
+    "entity_type": "service_account",
+    "preferred_hour": 2,
+    "hour_std": 1.49,
+    "base_locations": [
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/api/v1/logs/audit",
+      "/api/v1/data/export",
+      "/api/v1/certs/renew",
+      "/api/v1/auth/token"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 71.8,
+    "os": "Debian 12",
+    "mac": "a6:f0:09:1a:b3:72",
+    "protocol": "HTTPS",
+    "events_per_day": 89.4
+  },
+  "DEV_0063": {
+    "entity_id": "DEV_0063",
+    "entity_type": "edge_device",
+    "preferred_hour": 4,
+    "hour_std": 1.48,
+    "base_locations": [
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/logs/system",
+      "/telemetry/temperature",
+      "/control/pump/stop",
+      "/control/pump/start",
+      "/control/valve/set"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 115.7,
+    "os": "Linux 5.15-rt",
+    "mac": "3c:0f:7e:66:0a:4e",
+    "protocol": "MQTT",
+    "events_per_day": 46.1
+  },
+  "SVC_0064": {
+    "entity_id": "SVC_0064",
+    "entity_type": "service_account",
+    "preferred_hour": 19,
+    "hour_std": 1.33,
+    "base_locations": [
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/api/v1/db/query",
+      "/api/v1/auth/token",
+      "/api/v1/backup/trigger",
+      "/api/v1/metrics/collect",
+      "/api/v1/logs/audit"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 11.2,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "9a:6f:ee:83:bc:55",
+    "protocol": "SSH",
+    "events_per_day": 96.7
+  },
+  "USR_0065": {
+    "entity_id": "USR_0065",
+    "entity_type": "user",
+    "preferred_hour": 9,
+    "hour_std": 1.14,
+    "base_locations": [
+      "Berlin"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/apps/slack",
+      "/email/inbox",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 1892.3,
+    "os": "Windows 10",
+    "mac": "92:53:9f:37:0d:9f",
+    "protocol": "RDP",
+    "events_per_day": 8.9
+  },
+  "USR_0066": {
+    "entity_id": "USR_0066",
+    "entity_type": "user",
+    "preferred_hour": 11,
+    "hour_std": 1.14,
+    "base_locations": [
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/apps/slack",
+      "/files/docs/contracts",
+      "/apps/hr/timesheet",
+      "/apps/crm/dashboard",
+      "/email/inbox"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2782.8,
+    "os": "Windows 10",
+    "mac": "b2:cb:65:26:7c:34",
+    "protocol": "HTTPS",
+    "events_per_day": 12.5
+  },
+  "USR_0067": {
+    "entity_id": "USR_0067",
+    "entity_type": "user",
+    "preferred_hour": 15,
+    "hour_std": 1.17,
+    "base_locations": [
+      "Mumbai",
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/email/sent",
+      "/apps/slack",
+      "/apps/jira/board",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2113.4,
+    "os": "macOS 14",
+    "mac": "80:15:b1:db:bd:23",
+    "protocol": "HTTPS",
+    "events_per_day": 8.3
+  },
+  "USR_0068": {
+    "entity_id": "USR_0068",
+    "entity_type": "user",
+    "preferred_hour": 13,
+    "hour_std": 1.82,
+    "base_locations": [
+      "S\u00e3o Paulo",
+      "Paris"
+    ],
+    "typical_resources": [
+      "/apps/erp/inventory",
+      "/email/inbox",
+      "/apps/slack",
+      "/email/sent",
+      "/apps/confluence/wiki"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2813.0,
+    "os": "macOS 14",
+    "mac": "b4:fa:36:dd:b9:eb",
+    "protocol": "RDP",
+    "events_per_day": 10.4
+  },
+  "DEV_0069": {
+    "entity_id": "DEV_0069",
+    "entity_type": "edge_device",
+    "preferred_hour": 5,
+    "hour_std": 1.17,
+    "base_locations": [
+      "Mumbai",
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/control/pump/start",
+      "/diagnostics/self_test",
+      "/telemetry/temperature",
+      "/logs/system"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 541.6,
+    "os": "Zephyr 3.4",
+    "mac": "da:f7:ee:df:89:a5",
+    "protocol": "MQTT",
+    "events_per_day": 15.9
+  },
+  "SVC_0070": {
+    "entity_id": "SVC_0070",
+    "entity_type": "service_account",
+    "preferred_hour": 4,
+    "hour_std": 0.73,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/api/v1/backup/trigger",
+      "/api/v1/metrics/collect",
+      "/api/v1/logs/audit"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 98.5,
+    "os": "Alpine 3.18",
+    "mac": "56:8e:e6:7c:ed:c2",
+    "protocol": "SSH",
+    "events_per_day": 95.8
+  },
+  "DEV_0071": {
+    "entity_id": "DEV_0071",
+    "entity_type": "edge_device",
+    "preferred_hour": 12,
+    "hour_std": 2.51,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/telemetry/temperature",
+      "/telemetry/pressure",
+      "/control/pump/start",
+      "/diagnostics/self_test",
+      "/control/valve/set"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 264.1,
+    "os": "Zephyr 3.4",
+    "mac": "56:5d:f9:6c:b5:84",
+    "protocol": "HTTPS",
+    "events_per_day": 38.2
+  },
+  "USR_0072": {
+    "entity_id": "USR_0072",
+    "entity_type": "user",
+    "preferred_hour": 16,
+    "hour_std": 2.36,
+    "base_locations": [
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/apps/jira/board",
+      "/apps/erp/inventory",
+      "/apps/slack",
+      "/files/shared/presentations",
+      "/files/docs/contracts"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1637.2,
+    "os": "macOS 13",
+    "mac": "7c:05:61:2b:7b:d0",
+    "protocol": "RDP",
+    "events_per_day": 9.9
+  },
+  "USR_0073": {
+    "entity_id": "USR_0073",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.18,
+    "base_locations": [
+      "Berlin"
+    ],
+    "typical_resources": [
+      "/apps/confluence/wiki",
+      "/apps/slack",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2547.4,
+    "os": "macOS 14",
+    "mac": "38:fb:e5:08:2f:96",
+    "protocol": "RDP",
+    "events_per_day": 5.9
+  },
+  "SVC_0074": {
+    "entity_id": "SVC_0074",
+    "entity_type": "service_account",
+    "preferred_hour": 16,
+    "hour_std": 0.58,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/api/v1/data/export",
+      "/api/v1/logs/audit",
+      "/api/v1/db/query"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 6.4,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "5a:bc:f2:b0:d9:a9",
+    "protocol": "gRPC",
+    "events_per_day": 97.6
+  },
+  "USR_0075": {
+    "entity_id": "USR_0075",
+    "entity_type": "user",
+    "preferred_hour": 19,
+    "hour_std": 1.48,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/email/sent",
+      "/apps/slack",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 543.5,
+    "os": "ChromeOS",
+    "mac": "1e:80:76:3d:62:a1",
+    "protocol": "RDP",
+    "events_per_day": 9.6
+  },
+  "USR_0076": {
+    "entity_id": "USR_0076",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.11,
+    "base_locations": [
+      "London"
+    ],
+    "typical_resources": [
+      "/email/sent",
+      "/apps/crm/dashboard",
+      "/apps/confluence/wiki"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 1800.0,
+    "os": "macOS 14",
+    "mac": "fa:62:6e:f7:8d:90",
+    "protocol": "SSH",
+    "events_per_day": 10.5
+  },
+  "USR_0077": {
+    "entity_id": "USR_0077",
+    "entity_type": "user",
+    "preferred_hour": 12,
+    "hour_std": 1.58,
+    "base_locations": [
+      "Mumbai",
+      "New York"
+    ],
+    "typical_resources": [
+      "/apps/confluence/wiki",
+      "/files/shared/presentations",
+      "/email/inbox",
+      "/apps/crm/dashboard",
+      "/files/reports/quarterly.xlsx"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3436.4,
+    "os": "Windows 11",
+    "mac": "b4:74:b8:5b:9a:07",
+    "protocol": "RDP",
+    "events_per_day": 13.7
+  },
+  "USR_0078": {
+    "entity_id": "USR_0078",
+    "entity_type": "user",
+    "preferred_hour": 18,
+    "hour_std": 1.16,
+    "base_locations": [
+      "Seoul"
+    ],
+    "typical_resources": [
+      "/email/inbox",
+      "/files/docs/contracts",
+      "/apps/slack",
+      "/files/docs/policy.pdf"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1830.2,
+    "os": "Windows 11",
+    "mac": "de:1b:95:40:fb:34",
+    "protocol": "RDP",
+    "events_per_day": 7.2
+  },
+  "DEV_0079": {
+    "entity_id": "DEV_0079",
+    "entity_type": "edge_device",
+    "preferred_hour": 17,
+    "hour_std": 1.53,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/config/network",
+      "/logs/system",
+      "/control/pump/stop",
+      "/telemetry/pressure",
+      "/telemetry/temperature",
+      "/telemetry/vibration"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 437.0,
+    "os": "VxWorks 7",
+    "mac": "40:f5:e1:ae:5e:1a",
+    "protocol": "MQTT",
+    "events_per_day": 31.4
+  },
+  "USR_0080": {
+    "entity_id": "USR_0080",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 1.62,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/files/docs/policy.pdf",
+      "/apps/hr/timesheet",
+      "/apps/slack",
+      "/apps/confluence/wiki",
+      "/files/reports/quarterly.xlsx",
+      "/files/shared/presentations"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3306.1,
+    "os": "Windows 10",
+    "mac": "26:cd:fb:25:1b:4d",
+    "protocol": "RDP",
+    "events_per_day": 12.9
+  },
+  "USR_0081": {
+    "entity_id": "USR_0081",
+    "entity_type": "user",
+    "preferred_hour": 8,
+    "hour_std": 1.62,
+    "base_locations": [
+      "London"
+    ],
+    "typical_resources": [
+      "/email/sent",
+      "/files/docs/policy.pdf",
+      "/files/shared/presentations"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3378.0,
+    "os": "macOS 13",
+    "mac": "72:7f:3c:d5:73:c2",
+    "protocol": "SSH",
+    "events_per_day": 13.4
+  },
+  "USR_0082": {
+    "entity_id": "USR_0082",
+    "entity_type": "user",
+    "preferred_hour": 19,
+    "hour_std": 1.25,
+    "base_locations": [
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/apps/hr/timesheet",
+      "/apps/slack",
+      "/apps/jira/board"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 3558.0,
+    "os": "macOS 14",
+    "mac": "42:9c:1e:32:6a:6c",
+    "protocol": "VPN",
+    "events_per_day": 4.8
+  },
+  "SVC_0083": {
+    "entity_id": "SVC_0083",
+    "entity_type": "service_account",
+    "preferred_hour": 20,
+    "hour_std": 1.25,
+    "base_locations": [
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/api/v1/certs/renew",
+      "/api/v1/auth/token",
+      "/api/v1/data/export",
+      "/api/v1/backup/trigger",
+      "/api/v1/metrics/collect"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 101.4,
+    "os": "RHEL 9",
+    "mac": "72:58:26:50:01:d1",
+    "protocol": "AMQP",
+    "events_per_day": 57.5
+  },
+  "SVC_0084": {
+    "entity_id": "SVC_0084",
+    "entity_type": "service_account",
+    "preferred_hour": 2,
+    "hour_std": 0.63,
+    "base_locations": [
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/api/v1/data/export",
+      "/api/v1/users/list",
+      "/api/v1/logs/audit",
+      "/api/v1/certs/renew",
+      "/api/v1/config/update"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 98.5,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "12:10:76:93:90:e8",
+    "protocol": "gRPC",
+    "events_per_day": 100.0
+  },
+  "USR_0085": {
+    "entity_id": "USR_0085",
+    "entity_type": "user",
+    "preferred_hour": 12,
+    "hour_std": 2.37,
+    "base_locations": [
+      "New York"
+    ],
+    "typical_resources": [
+      "/apps/hr/timesheet",
+      "/apps/slack",
+      "/apps/jira/board"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 3103.8,
+    "os": "macOS 13",
+    "mac": "e8:65:d9:3a:73:4c",
+    "protocol": "RDP",
+    "events_per_day": 6.0
+  },
+  "USR_0086": {
+    "entity_id": "USR_0086",
+    "entity_type": "user",
+    "preferred_hour": 15,
+    "hour_std": 1.19,
+    "base_locations": [
+      "New York",
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/apps/crm/dashboard",
+      "/apps/confluence/wiki",
+      "/apps/slack"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3198.1,
+    "os": "Windows 11",
+    "mac": "1e:1e:54:9d:93:e0",
+    "protocol": "SSH",
+    "events_per_day": 12.1
+  },
+  "SVC_0087": {
+    "entity_id": "SVC_0087",
+    "entity_type": "service_account",
+    "preferred_hour": 1,
+    "hour_std": 0.86,
+    "base_locations": [
+      "Beijing"
+    ],
+    "typical_resources": [
+      "/api/v1/config/update",
+      "/api/v1/logs/audit",
+      "/api/v1/backup/trigger",
+      "/api/v1/auth/token"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 59.8,
+    "os": "RHEL 9",
+    "mac": "e2:8b:fc:e0:29:14",
+    "protocol": "gRPC",
+    "events_per_day": 86.5
+  },
+  "SVC_0088": {
+    "entity_id": "SVC_0088",
+    "entity_type": "service_account",
+    "preferred_hour": 17,
+    "hour_std": 1.35,
+    "base_locations": [
+      "Beijing"
+    ],
+    "typical_resources": [
+      "/api/v1/config/update",
+      "/api/v1/users/list",
+      "/api/v1/data/export"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 96.1,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "92:0d:2e:75:0a:89",
+    "protocol": "gRPC",
+    "events_per_day": 67.2
+  },
+  "DEV_0089": {
+    "entity_id": "DEV_0089",
+    "entity_type": "edge_device",
+    "preferred_hour": 14,
+    "hour_std": 1.84,
+    "base_locations": [
+      "Chicago",
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/logs/system",
+      "/control/pump/start",
+      "/config/network",
+      "/telemetry/temperature"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 175.0,
+    "os": "VxWorks 7",
+    "mac": "a2:f0:e2:8e:5c:df",
+    "protocol": "HTTPS",
+    "events_per_day": 15.5
+  },
+  "USR_0090": {
+    "entity_id": "USR_0090",
+    "entity_type": "user",
+    "preferred_hour": 18,
+    "hour_std": 2.47,
+    "base_locations": [
+      "Seoul"
+    ],
+    "typical_resources": [
+      "/apps/hr/timesheet",
+      "/apps/crm/dashboard",
+      "/files/shared/presentations",
+      "/apps/jira/board"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1743.7,
+    "os": "macOS 13",
+    "mac": "da:b2:d1:aa:a4:35",
+    "protocol": "VPN",
+    "events_per_day": 13.8
+  },
+  "USR_0091": {
+    "entity_id": "USR_0091",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.82,
+    "base_locations": [
+      "London"
+    ],
+    "typical_resources": [
+      "/apps/jira/board",
+      "/files/reports/quarterly.xlsx",
+      "/apps/hr/timesheet",
+      "/apps/erp/inventory",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2352.9,
+    "os": "Windows 11",
+    "mac": "50:93:cd:12:e8:2d",
+    "protocol": "HTTPS",
+    "events_per_day": 13.3
+  },
+  "SVC_0092": {
+    "entity_id": "SVC_0092",
+    "entity_type": "service_account",
+    "preferred_hour": 4,
+    "hour_std": 1.3,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/api/v1/certs/renew",
+      "/api/v1/auth/token",
+      "/api/v1/config/update"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 34.7,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "84:00:ec:d3:1b:60",
+    "protocol": "gRPC",
+    "events_per_day": 56.7
+  },
+  "USR_0093": {
+    "entity_id": "USR_0093",
+    "entity_type": "user",
+    "preferred_hour": 8,
+    "hour_std": 1.93,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/files/docs/contracts",
+      "/apps/slack",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 1092.5,
+    "os": "Windows 10",
+    "mac": "ec:e2:1a:68:88:43",
+    "protocol": "VPN",
+    "events_per_day": 3.9
+  },
+  "SVC_0094": {
+    "entity_id": "SVC_0094",
+    "entity_type": "service_account",
+    "preferred_hour": 22,
+    "hour_std": 0.63,
+    "base_locations": [
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/api/v1/metrics/collect",
+      "/api/v1/data/export",
+      "/api/v1/certs/renew",
+      "/api/v1/users/list"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 25.7,
+    "os": "Alpine 3.18",
+    "mac": "8c:3e:0e:7a:51:9f",
+    "protocol": "AMQP",
+    "events_per_day": 75.7
+  },
+  "USR_0095": {
+    "entity_id": "USR_0095",
+    "entity_type": "user",
+    "preferred_hour": 15,
+    "hour_std": 2.35,
+    "base_locations": [
+      "Berlin"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/files/docs/policy.pdf",
+      "/email/inbox"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 2286.4,
+    "os": "macOS 14",
+    "mac": "7e:73:3a:ec:3c:4e",
+    "protocol": "VPN",
+    "events_per_day": 5.7
+  },
+  "USR_0096": {
+    "entity_id": "USR_0096",
+    "entity_type": "user",
+    "preferred_hour": 11,
+    "hour_std": 1.25,
+    "base_locations": [
+      "Seoul"
+    ],
+    "typical_resources": [
+      "/apps/slack",
+      "/apps/crm/dashboard",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2110.8,
+    "os": "Ubuntu 22.04",
+    "mac": "8c:d4:f7:f1:7c:e9",
+    "protocol": "HTTPS",
+    "events_per_day": 9.4
+  },
+  "DEV_0097": {
+    "entity_id": "DEV_0097",
+    "entity_type": "edge_device",
+    "preferred_hour": 11,
+    "hour_std": 1.41,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/telemetry/pressure",
+      "/control/pump/stop",
+      "/control/pump/start",
+      "/telemetry/vibration"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 233.7,
+    "os": "FreeRTOS 10.5",
+    "mac": "d2:23:8d:d4:ae:88",
+    "protocol": "Modbus-TCP",
+    "events_per_day": 13.7
+  },
+  "USR_0098": {
+    "entity_id": "USR_0098",
+    "entity_type": "user",
+    "preferred_hour": 15,
+    "hour_std": 2.03,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/files/reports/quarterly.xlsx",
+      "/apps/confluence/wiki",
+      "/apps/slack",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 501.6,
+    "os": "Windows 11",
+    "mac": "54:fa:4c:e4:f7:b0",
+    "protocol": "SSH",
+    "events_per_day": 6.3
+  },
+  "USR_0099": {
+    "entity_id": "USR_0099",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 1.13,
+    "base_locations": [
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/apps/erp/inventory",
+      "/apps/jira/board",
+      "/apps/slack",
+      "/files/docs/contracts",
+      "/files/reports/quarterly.xlsx",
+      "/files/docs/policy.pdf"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1522.6,
+    "os": "macOS 14",
+    "mac": "3a:e9:a4:60:7a:c4",
+    "protocol": "SSH",
+    "events_per_day": 8.8
+  },
+  "DEV_0100": {
+    "entity_id": "DEV_0100",
+    "entity_type": "edge_device",
+    "preferred_hour": 22,
+    "hour_std": 2.06,
+    "base_locations": [
+      "Beijing",
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/config/network",
+      "/logs/system",
+      "/telemetry/pressure",
+      "/telemetry/temperature"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 196.3,
+    "os": "Zephyr 3.4",
+    "mac": "20:c3:c5:4d:fd:12",
+    "protocol": "CoAP",
+    "events_per_day": 38.5
+  },
+  "USR_0101": {
+    "entity_id": "USR_0101",
+    "entity_type": "user",
+    "preferred_hour": 13,
+    "hour_std": 1.77,
+    "base_locations": [
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/files/reports/quarterly.xlsx",
+      "/apps/confluence/wiki"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 1468.7,
+    "os": "macOS 13",
+    "mac": "b8:33:e1:33:e9:07",
+    "protocol": "HTTPS",
+    "events_per_day": 7.8
+  },
+  "USR_0102": {
+    "entity_id": "USR_0102",
+    "entity_type": "user",
+    "preferred_hour": 15,
+    "hour_std": 2.11,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/files/docs/policy.pdf",
+      "/apps/slack",
+      "/apps/confluence/wiki",
+      "/email/inbox",
+      "/files/docs/contracts"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 997.8,
+    "os": "ChromeOS",
+    "mac": "a6:26:f0:87:ad:cb",
+    "protocol": "RDP",
+    "events_per_day": 6.9
+  },
+  "DEV_0103": {
+    "entity_id": "DEV_0103",
+    "entity_type": "edge_device",
+    "preferred_hour": 11,
+    "hour_std": 1.47,
+    "base_locations": [
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/control/pump/start",
+      "/firmware/check_update",
+      "/config/network"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 486.2,
+    "os": "VxWorks 7",
+    "mac": "a0:a2:f9:12:23:78",
+    "protocol": "CoAP",
+    "events_per_day": 29.9
+  },
+  "USR_0104": {
+    "entity_id": "USR_0104",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.81,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/email/inbox",
+      "/apps/hr/timesheet",
+      "/email/sent",
+      "/files/docs/contracts",
+      "/apps/jira/board"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2162.7,
+    "os": "Windows 11",
+    "mac": "2a:2e:de:32:33:e3",
+    "protocol": "RDP",
+    "events_per_day": 7.5
+  },
+  "USR_0105": {
+    "entity_id": "USR_0105",
+    "entity_type": "user",
+    "preferred_hour": 11,
+    "hour_std": 1.54,
+    "base_locations": [
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/apps/hr/timesheet",
+      "/apps/erp/inventory",
+      "/files/shared/presentations",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1944.2,
+    "os": "Windows 11",
+    "mac": "5e:17:a6:1c:96:b7",
+    "protocol": "RDP",
+    "events_per_day": 7.0
+  },
+  "SVC_0106": {
+    "entity_id": "SVC_0106",
+    "entity_type": "service_account",
+    "preferred_hour": 0,
+    "hour_std": 0.51,
+    "base_locations": [
+      "Seoul"
+    ],
+    "typical_resources": [
+      "/api/v1/config/update",
+      "/api/v1/metrics/collect",
+      "/api/v1/users/list",
+      "/api/v1/logs/audit"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 23.5,
+    "os": "Alpine 3.18",
+    "mac": "9e:5c:57:59:28:c3",
+    "protocol": "AMQP",
+    "events_per_day": 34.9
+  },
+  "SVC_0107": {
+    "entity_id": "SVC_0107",
+    "entity_type": "service_account",
+    "preferred_hour": 23,
+    "hour_std": 1.4,
+    "base_locations": [
+      "Berlin"
+    ],
+    "typical_resources": [
+      "/api/v1/deploy/status",
+      "/api/v1/certs/renew",
+      "/api/v1/backup/trigger",
+      "/api/v1/logs/audit",
+      "/api/v1/users/list"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 85.2,
+    "os": "RHEL 9",
+    "mac": "aa:76:ec:82:eb:82",
+    "protocol": "gRPC",
+    "events_per_day": 99.8
+  },
+  "DEV_0108": {
+    "entity_id": "DEV_0108",
+    "entity_type": "edge_device",
+    "preferred_hour": 5,
+    "hour_std": 1.8,
+    "base_locations": [
+      "Singapore",
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/control/valve/set",
+      "/firmware/check_update",
+      "/telemetry/temperature",
+      "/telemetry/vibration",
+      "/control/pump/stop",
+      "/logs/system"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 586.5,
+    "os": "VxWorks 7",
+    "mac": "fc:93:50:25:e2:b0",
+    "protocol": "Modbus-TCP",
+    "events_per_day": 29.6
+  },
+  "SVC_0109": {
+    "entity_id": "SVC_0109",
+    "entity_type": "service_account",
+    "preferred_hour": 5,
+    "hour_std": 1.17,
+    "base_locations": [
+      "Dubai",
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/api/v1/users/list",
+      "/api/v1/metrics/collect",
+      "/api/v1/auth/token",
+      "/api/v1/data/export",
+      "/api/v1/config/update"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 59.8,
+    "os": "Debian 12",
+    "mac": "da:80:e9:9a:65:c4",
+    "protocol": "HTTPS",
+    "events_per_day": 87.1
+  },
+  "DEV_0110": {
+    "entity_id": "DEV_0110",
+    "entity_type": "edge_device",
+    "preferred_hour": 4,
+    "hour_std": 1.37,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/config/network",
+      "/telemetry/pressure",
+      "/logs/system",
+      "/telemetry/temperature",
+      "/control/pump/stop"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 457.6,
+    "os": "Zephyr 3.4",
+    "mac": "46:b7:97:97:0b:ca",
+    "protocol": "Modbus-TCP",
+    "events_per_day": 31.2
+  },
+  "SVC_0111": {
+    "entity_id": "SVC_0111",
+    "entity_type": "service_account",
+    "preferred_hour": 0,
+    "hour_std": 1.11,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/api/v1/users/list",
+      "/api/v1/data/export",
+      "/api/v1/metrics/collect"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 112.2,
+    "os": "Debian 12",
+    "mac": "a2:fe:92:75:b4:70",
+    "protocol": "AMQP",
+    "events_per_day": 45.7
+  },
+  "USR_0112": {
+    "entity_id": "USR_0112",
+    "entity_type": "user",
+    "preferred_hour": 9,
+    "hour_std": 1.08,
+    "base_locations": [
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/apps/confluence/wiki",
+      "/apps/hr/timesheet",
+      "/files/docs/policy.pdf",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2111.4,
+    "os": "ChromeOS",
+    "mac": "94:31:14:9e:e1:11",
+    "protocol": "VPN",
+    "events_per_day": 5.4
+  },
+  "USR_0113": {
+    "entity_id": "USR_0113",
+    "entity_type": "user",
+    "preferred_hour": 14,
+    "hour_std": 2.21,
+    "base_locations": [
+      "Berlin"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/apps/slack",
+      "/files/shared/presentations"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 685.1,
+    "os": "Windows 11",
+    "mac": "20:97:a7:d4:59:66",
+    "protocol": "HTTPS",
+    "events_per_day": 8.7
+  },
+  "SVC_0114": {
+    "entity_id": "SVC_0114",
+    "entity_type": "service_account",
+    "preferred_hour": 5,
+    "hour_std": 0.91,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/api/v1/config/update",
+      "/api/v1/logs/audit",
+      "/api/v1/data/export"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 90.8,
+    "os": "Alpine 3.18",
+    "mac": "be:8b:54:83:f6:97",
+    "protocol": "HTTPS",
+    "events_per_day": 52.7
+  },
+  "SVC_0115": {
+    "entity_id": "SVC_0115",
+    "entity_type": "service_account",
+    "preferred_hour": 20,
+    "hour_std": 1.23,
+    "base_locations": [
+      "Chicago",
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/api/v1/data/export",
+      "/api/v1/metrics/collect",
+      "/api/v1/users/list",
+      "/api/v1/db/query",
+      "/api/v1/deploy/status",
+      "/api/v1/auth/token"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 111.5,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "16:26:48:73:cb:bb",
+    "protocol": "AMQP",
+    "events_per_day": 77.7
+  },
+  "SVC_0116": {
+    "entity_id": "SVC_0116",
+    "entity_type": "service_account",
+    "preferred_hour": 7,
+    "hour_std": 1.33,
+    "base_locations": [
+      "Chicago",
+      "New York"
+    ],
+    "typical_resources": [
+      "/api/v1/config/update",
+      "/api/v1/db/query",
+      "/api/v1/deploy/status",
+      "/api/v1/logs/audit",
+      "/api/v1/data/export",
+      "/api/v1/metrics/collect"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 23.9,
+    "os": "Alpine 3.18",
+    "mac": "1a:e8:bc:86:c3:be",
+    "protocol": "gRPC",
+    "events_per_day": 85.2
+  },
+  "SVC_0117": {
+    "entity_id": "SVC_0117",
+    "entity_type": "service_account",
+    "preferred_hour": 13,
+    "hour_std": 1.02,
+    "base_locations": [
+      "Tokyo"
+    ],
+    "typical_resources": [
+      "/api/v1/users/list",
+      "/api/v1/data/export",
+      "/api/v1/backup/trigger"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 83.5,
+    "os": "RHEL 9",
+    "mac": "a6:a7:71:20:ed:9a",
+    "protocol": "SSH",
+    "events_per_day": 56.2
+  },
+  "SVC_0118": {
+    "entity_id": "SVC_0118",
+    "entity_type": "service_account",
+    "preferred_hour": 7,
+    "hour_std": 0.88,
+    "base_locations": [
+      "Beijing"
+    ],
+    "typical_resources": [
+      "/api/v1/certs/renew",
+      "/api/v1/users/list",
+      "/api/v1/logs/audit",
+      "/api/v1/metrics/collect"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 55.5,
+    "os": "Debian 12",
+    "mac": "3c:13:9b:fc:3b:31",
+    "protocol": "SSH",
+    "events_per_day": 66.2
+  },
+  "USR_0119": {
+    "entity_id": "USR_0119",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 2.35,
+    "base_locations": [
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/files/reports/quarterly.xlsx",
+      "/apps/slack",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1055.8,
+    "os": "ChromeOS",
+    "mac": "d4:bd:d6:4f:d4:32",
+    "protocol": "SSH",
+    "events_per_day": 9.5
+  },
+  "USR_0120": {
+    "entity_id": "USR_0120",
+    "entity_type": "user",
+    "preferred_hour": 12,
+    "hour_std": 2.41,
+    "base_locations": [
+      "London"
+    ],
+    "typical_resources": [
+      "/apps/slack",
+      "/apps/erp/inventory",
+      "/apps/jira/board",
+      "/apps/crm/dashboard",
+      "/apps/hr/timesheet",
+      "/files/docs/contracts"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 850.2,
+    "os": "macOS 14",
+    "mac": "f2:10:bd:6f:e3:e3",
+    "protocol": "VPN",
+    "events_per_day": 13.5
+  },
+  "USR_0121": {
+    "entity_id": "USR_0121",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 1.8,
+    "base_locations": [
+      "Paris",
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/email/sent",
+      "/apps/hr/timesheet",
+      "/apps/slack",
+      "/files/docs/policy.pdf",
+      "/apps/confluence/wiki",
+      "/apps/jira/board"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 2782.9,
+    "os": "Ubuntu 22.04",
+    "mac": "30:bc:b7:1f:cb:8d",
+    "protocol": "RDP",
+    "events_per_day": 11.5
+  },
+  "USR_0122": {
+    "entity_id": "USR_0122",
+    "entity_type": "user",
+    "preferred_hour": 17,
+    "hour_std": 2.12,
+    "base_locations": [
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/apps/crm/dashboard",
+      "/apps/confluence/wiki",
+      "/files/reports/quarterly.xlsx",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 1930.1,
+    "os": "macOS 14",
+    "mac": "3e:2e:6c:0a:19:aa",
+    "protocol": "HTTPS",
+    "events_per_day": 12.1
+  },
+  "USR_0123": {
+    "entity_id": "USR_0123",
+    "entity_type": "user",
+    "preferred_hour": 12,
+    "hour_std": 2.23,
+    "base_locations": [
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/files/reports/quarterly.xlsx",
+      "/apps/jira/board",
+      "/apps/slack",
+      "/apps/crm/dashboard",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2293.1,
+    "os": "Windows 10",
+    "mac": "c6:23:6a:6e:77:a8",
+    "protocol": "RDP",
+    "events_per_day": 9.0
+  },
+  "SVC_0124": {
+    "entity_id": "SVC_0124",
+    "entity_type": "service_account",
+    "preferred_hour": 7,
+    "hour_std": 0.65,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/api/v1/logs/audit",
+      "/api/v1/config/update",
+      "/api/v1/users/list",
+      "/api/v1/db/query",
+      "/api/v1/auth/token",
+      "/api/v1/backup/trigger"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 6.4,
+    "os": "Debian 12",
+    "mac": "1c:8d:4a:42:80:59",
+    "protocol": "SSH",
+    "events_per_day": 67.9
+  },
+  "USR_0125": {
+    "entity_id": "USR_0125",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.81,
+    "base_locations": [
+      "New York"
+    ],
+    "typical_resources": [
+      "/apps/jira/board",
+      "/apps/erp/inventory",
+      "/email/inbox"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 3464.9,
+    "os": "Windows 11",
+    "mac": "2c:07:b7:79:a5:08",
+    "protocol": "RDP",
+    "events_per_day": 7.1
+  },
+  "USR_0126": {
+    "entity_id": "USR_0126",
+    "entity_type": "user",
+    "preferred_hour": 12,
+    "hour_std": 1.6,
+    "base_locations": [
+      "Berlin"
+    ],
+    "typical_resources": [
+      "/apps/confluence/wiki",
+      "/apps/hr/timesheet",
+      "/email/inbox",
+      "/email/sent"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 3309.1,
+    "os": "Windows 10",
+    "mac": "82:3a:20:f3:e5:b9",
+    "protocol": "RDP",
+    "events_per_day": 4.7
+  },
+  "USR_0127": {
+    "entity_id": "USR_0127",
+    "entity_type": "user",
+    "preferred_hour": 8,
+    "hour_std": 1.92,
+    "base_locations": [
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/apps/crm/dashboard",
+      "/email/inbox",
+      "/files/docs/contracts",
+      "/apps/slack",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 637.3,
+    "os": "macOS 14",
+    "mac": "7a:16:9a:ea:0f:1f",
+    "protocol": "RDP",
+    "events_per_day": 14.0
+  },
+  "USR_0128": {
+    "entity_id": "USR_0128",
+    "entity_type": "user",
+    "preferred_hour": 11,
+    "hour_std": 2.38,
+    "base_locations": [
+      "Chicago",
+      "London"
+    ],
+    "typical_resources": [
+      "/apps/slack",
+      "/files/docs/policy.pdf",
+      "/email/inbox",
+      "/email/sent"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 1535.6,
+    "os": "ChromeOS",
+    "mac": "9a:fb:e3:25:29:a4",
+    "protocol": "VPN",
+    "events_per_day": 3.8
+  },
+  "USR_0129": {
+    "entity_id": "USR_0129",
+    "entity_type": "user",
+    "preferred_hour": 9,
+    "hour_std": 2.1,
+    "base_locations": [
+      "Paris",
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/apps/erp/inventory",
+      "/files/docs/policy.pdf",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 705.3,
+    "os": "Windows 11",
+    "mac": "18:a6:c3:96:e8:dc",
+    "protocol": "RDP",
+    "events_per_day": 5.8
+  },
+  "USR_0130": {
+    "entity_id": "USR_0130",
+    "entity_type": "user",
+    "preferred_hour": 16,
+    "hour_std": 2.26,
+    "base_locations": [
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/files/docs/policy.pdf",
+      "/apps/slack",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1327.8,
+    "os": "ChromeOS",
+    "mac": "d2:dc:e7:74:d3:ad",
+    "protocol": "RDP",
+    "events_per_day": 5.7
+  },
+  "USR_0131": {
+    "entity_id": "USR_0131",
+    "entity_type": "user",
+    "preferred_hour": 11,
+    "hour_std": 1.57,
+    "base_locations": [
+      "Singapore",
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/apps/erp/inventory",
+      "/files/docs/policy.pdf",
+      "/email/sent"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 315.3,
+    "os": "macOS 13",
+    "mac": "f4:a0:da:a0:82:bf",
+    "protocol": "HTTPS",
+    "events_per_day": 7.0
+  },
+  "USR_0132": {
+    "entity_id": "USR_0132",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.81,
+    "base_locations": [
+      "Singapore",
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/apps/erp/inventory",
+      "/apps/jira/board",
+      "/email/sent",
+      "/files/docs/policy.pdf"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1886.8,
+    "os": "ChromeOS",
+    "mac": "18:22:2e:2b:2f:dd",
+    "protocol": "VPN",
+    "events_per_day": 14.0
+  },
+  "USR_0133": {
+    "entity_id": "USR_0133",
+    "entity_type": "user",
+    "preferred_hour": 17,
+    "hour_std": 1.05,
+    "base_locations": [
+      "Beijing",
+      "Seoul"
+    ],
+    "typical_resources": [
+      "/apps/crm/dashboard",
+      "/files/docs/contracts",
+      "/apps/hr/timesheet",
+      "/files/docs/policy.pdf"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1944.6,
+    "os": "Windows 10",
+    "mac": "de:1e:a8:3e:d2:b5",
+    "protocol": "HTTPS",
+    "events_per_day": 8.0
+  },
+  "SVC_0134": {
+    "entity_id": "SVC_0134",
+    "entity_type": "service_account",
+    "preferred_hour": 23,
+    "hour_std": 0.81,
+    "base_locations": [
+      "New York",
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/api/v1/metrics/collect",
+      "/api/v1/data/export",
+      "/api/v1/deploy/status",
+      "/api/v1/certs/renew",
+      "/api/v1/config/update"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 6.5,
+    "os": "RHEL 9",
+    "mac": "92:1a:93:9f:b4:35",
+    "protocol": "SSH",
+    "events_per_day": 73.1
+  },
+  "SVC_0135": {
+    "entity_id": "SVC_0135",
+    "entity_type": "service_account",
+    "preferred_hour": 6,
+    "hour_std": 1.48,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/api/v1/db/query",
+      "/api/v1/deploy/status",
+      "/api/v1/backup/trigger",
+      "/api/v1/config/update",
+      "/api/v1/certs/renew",
+      "/api/v1/data/export"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 14.8,
+    "os": "Alpine 3.18",
+    "mac": "c2:72:37:b3:bc:3a",
+    "protocol": "HTTPS",
+    "events_per_day": 99.7
+  },
+  "USR_0136": {
+    "entity_id": "USR_0136",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 1.45,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/apps/slack",
+      "/apps/jira/board",
+      "/apps/hr/timesheet",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 992.7,
+    "os": "Windows 11",
+    "mac": "b2:0d:88:0e:5c:8b",
+    "protocol": "RDP",
+    "events_per_day": 13.8
+  },
+  "DEV_0137": {
+    "entity_id": "DEV_0137",
+    "entity_type": "edge_device",
+    "preferred_hour": 16,
+    "hour_std": 1.07,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/config/network",
+      "/logs/system",
+      "/control/valve/set",
+      "/firmware/check_update",
+      "/telemetry/vibration",
+      "/telemetry/temperature"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 218.8,
+    "os": "Linux 5.15-rt",
+    "mac": "24:03:5c:49:cd:23",
+    "protocol": "HTTPS",
+    "events_per_day": 38.6
+  },
+  "SVC_0138": {
+    "entity_id": "SVC_0138",
+    "entity_type": "service_account",
+    "preferred_hour": 17,
+    "hour_std": 1.02,
+    "base_locations": [
+      "New York"
+    ],
+    "typical_resources": [
+      "/api/v1/backup/trigger",
+      "/api/v1/config/update",
+      "/api/v1/logs/audit",
+      "/api/v1/auth/token"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 93.0,
+    "os": "Alpine 3.18",
+    "mac": "56:2e:6e:c0:d6:e8",
+    "protocol": "HTTPS",
+    "events_per_day": 28.2
+  },
+  "USR_0139": {
+    "entity_id": "USR_0139",
+    "entity_type": "user",
+    "preferred_hour": 14,
+    "hour_std": 2.29,
+    "base_locations": [
+      "Dubai",
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/apps/confluence/wiki",
+      "/apps/jira/board",
+      "/files/reports/quarterly.xlsx",
+      "/files/shared/presentations",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3261.5,
+    "os": "macOS 14",
+    "mac": "ac:2b:1a:4f:50:19",
+    "protocol": "SSH",
+    "events_per_day": 9.3
+  },
+  "USR_0140": {
+    "entity_id": "USR_0140",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 1.04,
+    "base_locations": [
+      "Tokyo"
+    ],
+    "typical_resources": [
+      "/apps/jira/board",
+      "/email/sent",
+      "/files/docs/policy.pdf",
+      "/files/shared/presentations"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 1646.3,
+    "os": "Windows 10",
+    "mac": "c0:f8:e2:d4:8b:6e",
+    "protocol": "SSH",
+    "events_per_day": 9.6
+  },
+  "SVC_0141": {
+    "entity_id": "SVC_0141",
+    "entity_type": "service_account",
+    "preferred_hour": 2,
+    "hour_std": 0.73,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/api/v1/logs/audit",
+      "/api/v1/db/query",
+      "/api/v1/users/list"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 44.0,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "38:38:91:f9:9d:17",
+    "protocol": "AMQP",
+    "events_per_day": 65.6
+  },
+  "USR_0142": {
+    "entity_id": "USR_0142",
+    "entity_type": "user",
+    "preferred_hour": 9,
+    "hour_std": 1.98,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/email/inbox",
+      "/apps/confluence/wiki",
+      "/files/shared/presentations",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 3562.8,
+    "os": "Windows 10",
+    "mac": "c2:03:68:9a:6c:46",
+    "protocol": "HTTPS",
+    "events_per_day": 10.2
+  },
+  "USR_0143": {
+    "entity_id": "USR_0143",
+    "entity_type": "user",
+    "preferred_hour": 17,
+    "hour_std": 2.44,
+    "base_locations": [
+      "Dubai",
+      "Paris"
+    ],
+    "typical_resources": [
+      "/files/reports/quarterly.xlsx",
+      "/email/inbox",
+      "/apps/confluence/wiki",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1267.4,
+    "os": "Windows 10",
+    "mac": "60:03:fe:dc:59:42",
+    "protocol": "RDP",
+    "events_per_day": 13.8
+  },
+  "USR_0144": {
+    "entity_id": "USR_0144",
+    "entity_type": "user",
+    "preferred_hour": 13,
+    "hour_std": 1.95,
+    "base_locations": [
+      "New York",
+      "Tokyo"
+    ],
+    "typical_resources": [
+      "/apps/crm/dashboard",
+      "/files/reports/quarterly.xlsx",
+      "/email/inbox"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 898.7,
+    "os": "ChromeOS",
+    "mac": "74:24:cb:15:df:09",
+    "protocol": "VPN",
+    "events_per_day": 10.0
+  },
+  "USR_0145": {
+    "entity_id": "USR_0145",
+    "entity_type": "user",
+    "preferred_hour": 18,
+    "hour_std": 2.06,
+    "base_locations": [
+      "Toronto",
+      "London"
+    ],
+    "typical_resources": [
+      "/apps/confluence/wiki",
+      "/files/docs/policy.pdf",
+      "/apps/slack"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1156.1,
+    "os": "macOS 13",
+    "mac": "04:cf:d5:94:3a:cf",
+    "protocol": "RDP",
+    "events_per_day": 7.6
+  },
+  "SVC_0146": {
+    "entity_id": "SVC_0146",
+    "entity_type": "service_account",
+    "preferred_hour": 22,
+    "hour_std": 0.53,
+    "base_locations": [
+      "Toronto",
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/api/v1/data/export",
+      "/api/v1/metrics/collect",
+      "/api/v1/logs/audit"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 68.5,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "6e:b9:2d:df:36:7c",
+    "protocol": "AMQP",
+    "events_per_day": 54.9
+  },
+  "USR_0147": {
+    "entity_id": "USR_0147",
+    "entity_type": "user",
+    "preferred_hour": 18,
+    "hour_std": 1.33,
+    "base_locations": [
+      "S\u00e3o Paulo",
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/files/reports/quarterly.xlsx",
+      "/apps/confluence/wiki",
+      "/apps/slack",
+      "/apps/hr/timesheet",
+      "/files/shared/presentations",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3165.9,
+    "os": "Windows 11",
+    "mac": "c6:ca:9e:ad:71:aa",
+    "protocol": "VPN",
+    "events_per_day": 8.8
+  },
+  "USR_0148": {
+    "entity_id": "USR_0148",
+    "entity_type": "user",
+    "preferred_hour": 13,
+    "hour_std": 2.2,
+    "base_locations": [
+      "Seoul"
+    ],
+    "typical_resources": [
+      "/apps/slack",
+      "/files/docs/policy.pdf",
+      "/files/docs/contracts",
+      "/apps/erp/inventory",
+      "/email/inbox"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2747.6,
+    "os": "Windows 11",
+    "mac": "1a:63:b2:b3:4b:78",
+    "protocol": "SSH",
+    "events_per_day": 11.4
+  },
+  "USR_0149": {
+    "entity_id": "USR_0149",
+    "entity_type": "user",
+    "preferred_hour": 15,
+    "hour_std": 1.39,
+    "base_locations": [
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/apps/jira/board",
+      "/files/docs/contracts",
+      "/apps/confluence/wiki",
+      "/files/shared/presentations",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 736.5,
+    "os": "macOS 13",
+    "mac": "c0:4e:26:5a:fc:ed",
+    "protocol": "RDP",
+    "events_per_day": 13.8
+  },
+  "SVC_0150": {
+    "entity_id": "SVC_0150",
+    "entity_type": "service_account",
+    "preferred_hour": 1,
+    "hour_std": 0.77,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/api/v1/deploy/status",
+      "/api/v1/backup/trigger",
+      "/api/v1/data/export",
+      "/api/v1/certs/renew"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 98.7,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "78:a5:a1:4d:e1:22",
+    "protocol": "gRPC",
+    "events_per_day": 59.8
+  },
+  "USR_0151": {
+    "entity_id": "USR_0151",
+    "entity_type": "user",
+    "preferred_hour": 8,
+    "hour_std": 1.83,
+    "base_locations": [
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/apps/slack",
+      "/email/sent",
+      "/apps/hr/timesheet",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 651.7,
+    "os": "macOS 13",
+    "mac": "72:1c:b4:25:9e:ec",
+    "protocol": "VPN",
+    "events_per_day": 4.7
+  },
+  "USR_0152": {
+    "entity_id": "USR_0152",
+    "entity_type": "user",
+    "preferred_hour": 17,
+    "hour_std": 2.35,
+    "base_locations": [
+      "Sydney",
+      "Seoul"
+    ],
+    "typical_resources": [
+      "/files/docs/policy.pdf",
+      "/apps/erp/inventory",
+      "/apps/hr/timesheet",
+      "/files/docs/contracts",
+      "/apps/crm/dashboard",
+      "/email/inbox"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2389.2,
+    "os": "Windows 10",
+    "mac": "72:27:2e:c4:ec:15",
+    "protocol": "VPN",
+    "events_per_day": 8.9
+  },
+  "USR_0153": {
+    "entity_id": "USR_0153",
+    "entity_type": "user",
+    "preferred_hour": 16,
+    "hour_std": 2.37,
+    "base_locations": [
+      "London"
+    ],
+    "typical_resources": [
+      "/files/docs/policy.pdf",
+      "/apps/confluence/wiki",
+      "/files/docs/contracts",
+      "/apps/hr/timesheet",
+      "/apps/jira/board",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 1692.7,
+    "os": "ChromeOS",
+    "mac": "ce:f3:4d:1f:e6:34",
+    "protocol": "RDP",
+    "events_per_day": 7.2
+  },
+  "USR_0154": {
+    "entity_id": "USR_0154",
+    "entity_type": "user",
+    "preferred_hour": 12,
+    "hour_std": 2.11,
+    "base_locations": [
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/email/inbox",
+      "/files/shared/presentations",
+      "/files/reports/quarterly.xlsx",
+      "/files/docs/contracts",
+      "/apps/erp/inventory",
+      "/apps/slack"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 525.2,
+    "os": "Windows 11",
+    "mac": "86:58:14:7e:e0:e0",
+    "protocol": "VPN",
+    "events_per_day": 13.0
+  },
+  "USR_0155": {
+    "entity_id": "USR_0155",
+    "entity_type": "user",
+    "preferred_hour": 17,
+    "hour_std": 1.53,
+    "base_locations": [
+      "Berlin",
+      "Paris"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/apps/hr/timesheet",
+      "/files/reports/quarterly.xlsx",
+      "/apps/crm/dashboard",
+      "/files/shared/presentations"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 3432.7,
+    "os": "macOS 14",
+    "mac": "ac:be:90:c6:d1:ad",
+    "protocol": "HTTPS",
+    "events_per_day": 7.8
+  },
+  "USR_0156": {
+    "entity_id": "USR_0156",
+    "entity_type": "user",
+    "preferred_hour": 14,
+    "hour_std": 2.41,
+    "base_locations": [
+      "Singapore",
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/email/sent",
+      "/email/inbox",
+      "/apps/slack"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2081.5,
+    "os": "Windows 10",
+    "mac": "40:21:a8:30:c5:91",
+    "protocol": "HTTPS",
+    "events_per_day": 4.9
+  },
+  "USR_0157": {
+    "entity_id": "USR_0157",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.08,
+    "base_locations": [
+      "Berlin"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/apps/erp/inventory",
+      "/files/docs/policy.pdf"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2357.0,
+    "os": "macOS 14",
+    "mac": "f6:aa:29:48:b3:9e",
+    "protocol": "SSH",
+    "events_per_day": 8.7
+  },
+  "DEV_0158": {
+    "entity_id": "DEV_0158",
+    "entity_type": "edge_device",
+    "preferred_hour": 8,
+    "hour_std": 1.15,
+    "base_locations": [
+      "Chicago",
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/diagnostics/self_test",
+      "/logs/system",
+      "/telemetry/temperature"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 383.1,
+    "os": "Linux 5.15-rt",
+    "mac": "d0:42:2b:9e:c0:a8",
+    "protocol": "MQTT",
+    "events_per_day": 28.4
+  },
+  "DEV_0159": {
+    "entity_id": "DEV_0159",
+    "entity_type": "edge_device",
+    "preferred_hour": 2,
+    "hour_std": 2.64,
+    "base_locations": [
+      "Tokyo",
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/control/pump/start",
+      "/control/pump/stop",
+      "/diagnostics/self_test",
+      "/telemetry/temperature",
+      "/telemetry/pressure",
+      "/config/network"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 62.8,
+    "os": "VxWorks 7",
+    "mac": "2e:d8:b9:09:b9:9e",
+    "protocol": "MQTT",
+    "events_per_day": 14.1
+  },
+  "USR_0160": {
+    "entity_id": "USR_0160",
+    "entity_type": "user",
+    "preferred_hour": 11,
+    "hour_std": 1.14,
+    "base_locations": [
+      "Tokyo",
+      "Seoul"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/files/reports/quarterly.xlsx",
+      "/files/docs/policy.pdf"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2578.8,
+    "os": "ChromeOS",
+    "mac": "4a:62:73:46:4f:27",
+    "protocol": "SSH",
+    "events_per_day": 9.3
+  },
+  "DEV_0161": {
+    "entity_id": "DEV_0161",
+    "entity_type": "edge_device",
+    "preferred_hour": 11,
+    "hour_std": 2.08,
+    "base_locations": [
+      "Sydney",
+      "Beijing"
+    ],
+    "typical_resources": [
+      "/config/network",
+      "/control/pump/stop",
+      "/telemetry/vibration",
+      "/logs/system",
+      "/firmware/check_update",
+      "/diagnostics/self_test"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 469.9,
+    "os": "FreeRTOS 10.5",
+    "mac": "2e:ac:43:c0:4e:53",
+    "protocol": "MQTT",
+    "events_per_day": 39.0
+  },
+  "USR_0162": {
+    "entity_id": "USR_0162",
+    "entity_type": "user",
+    "preferred_hour": 12,
+    "hour_std": 2.47,
+    "base_locations": [
+      "Tokyo",
+      "Beijing"
+    ],
+    "typical_resources": [
+      "/apps/jira/board",
+      "/files/reports/quarterly.xlsx",
+      "/files/docs/policy.pdf",
+      "/apps/crm/dashboard",
+      "/apps/slack",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3559.3,
+    "os": "macOS 13",
+    "mac": "f8:e0:16:d2:ba:79",
+    "protocol": "VPN",
+    "events_per_day": 14.3
+  },
+  "SVC_0163": {
+    "entity_id": "SVC_0163",
+    "entity_type": "service_account",
+    "preferred_hour": 14,
+    "hour_std": 0.54,
+    "base_locations": [
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/api/v1/metrics/collect",
+      "/api/v1/backup/trigger",
+      "/api/v1/config/update"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 70.3,
+    "os": "RHEL 9",
+    "mac": "5e:77:7a:9e:f0:63",
+    "protocol": "HTTPS",
+    "events_per_day": 93.2
+  },
+  "USR_0164": {
+    "entity_id": "USR_0164",
+    "entity_type": "user",
+    "preferred_hour": 11,
+    "hour_std": 2.1,
+    "base_locations": [
+      "Berlin"
+    ],
+    "typical_resources": [
+      "/apps/hr/timesheet",
+      "/files/docs/policy.pdf",
+      "/apps/crm/dashboard",
+      "/apps/slack",
+      "/apps/jira/board",
+      "/files/reports/quarterly.xlsx"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 3416.1,
+    "os": "Windows 10",
+    "mac": "d0:ec:90:c3:d6:52",
+    "protocol": "VPN",
+    "events_per_day": 8.7
+  },
+  "DEV_0165": {
+    "entity_id": "DEV_0165",
+    "entity_type": "edge_device",
+    "preferred_hour": 19,
+    "hour_std": 2.69,
+    "base_locations": [
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/telemetry/temperature",
+      "/logs/system",
+      "/control/valve/set",
+      "/telemetry/vibration"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 411.1,
+    "os": "Zephyr 3.4",
+    "mac": "b6:80:1a:f6:be:34",
+    "protocol": "CoAP",
+    "events_per_day": 24.6
+  },
+  "USR_0166": {
+    "entity_id": "USR_0166",
+    "entity_type": "user",
+    "preferred_hour": 18,
+    "hour_std": 1.18,
+    "base_locations": [
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/apps/crm/dashboard",
+      "/apps/confluence/wiki",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 1755.4,
+    "os": "Windows 11",
+    "mac": "d4:2a:52:8b:e6:4b",
+    "protocol": "HTTPS",
+    "events_per_day": 7.9
+  },
+  "USR_0167": {
+    "entity_id": "USR_0167",
+    "entity_type": "user",
+    "preferred_hour": 13,
+    "hour_std": 1.47,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/apps/confluence/wiki",
+      "/apps/hr/timesheet",
+      "/email/inbox"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2734.9,
+    "os": "Windows 10",
+    "mac": "64:e6:b2:0d:d4:1b",
+    "protocol": "VPN",
+    "events_per_day": 9.2
+  },
+  "USR_0168": {
+    "entity_id": "USR_0168",
+    "entity_type": "user",
+    "preferred_hour": 19,
+    "hour_std": 1.92,
+    "base_locations": [
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/apps/confluence/wiki",
+      "/email/sent",
+      "/files/shared/presentations",
+      "/apps/jira/board",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3568.1,
+    "os": "Windows 11",
+    "mac": "ee:29:bf:72:0e:a3",
+    "protocol": "VPN",
+    "events_per_day": 3.0
+  },
+  "SVC_0169": {
+    "entity_id": "SVC_0169",
+    "entity_type": "service_account",
+    "preferred_hour": 12,
+    "hour_std": 1.03,
+    "base_locations": [
+      "Paris",
+      "Seoul"
+    ],
+    "typical_resources": [
+      "/api/v1/auth/token",
+      "/api/v1/backup/trigger",
+      "/api/v1/certs/renew",
+      "/api/v1/logs/audit",
+      "/api/v1/metrics/collect"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 6.1,
+    "os": "Debian 12",
+    "mac": "b2:4a:46:13:92:f1",
+    "protocol": "SSH",
+    "events_per_day": 24.2
+  },
+  "USR_0170": {
+    "entity_id": "USR_0170",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 1.6,
+    "base_locations": [
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/apps/hr/timesheet",
+      "/files/docs/contracts",
+      "/apps/confluence/wiki"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 1196.6,
+    "os": "macOS 14",
+    "mac": "36:e5:02:28:09:83",
+    "protocol": "HTTPS",
+    "events_per_day": 7.8
+  },
+  "USR_0171": {
+    "entity_id": "USR_0171",
+    "entity_type": "user",
+    "preferred_hour": 15,
+    "hour_std": 1.5,
+    "base_locations": [
+      "Sydney"
+    ],
+    "typical_resources": [
+      "/files/reports/quarterly.xlsx",
+      "/apps/erp/inventory",
+      "/email/inbox"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 664.6,
+    "os": "Ubuntu 22.04",
+    "mac": "0c:38:93:79:9a:3e",
+    "protocol": "VPN",
+    "events_per_day": 7.3
+  },
+  "USR_0172": {
+    "entity_id": "USR_0172",
+    "entity_type": "user",
+    "preferred_hour": 8,
+    "hour_std": 1.44,
+    "base_locations": [
+      "Paris"
+    ],
+    "typical_resources": [
+      "/apps/confluence/wiki",
+      "/apps/erp/inventory",
+      "/files/docs/policy.pdf"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3304.1,
+    "os": "macOS 13",
+    "mac": "b6:20:38:ff:08:7b",
+    "protocol": "HTTPS",
+    "events_per_day": 3.5
+  },
+  "DEV_0173": {
+    "entity_id": "DEV_0173",
+    "entity_type": "edge_device",
+    "preferred_hour": 14,
+    "hour_std": 1.77,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/firmware/check_update",
+      "/logs/system",
+      "/telemetry/pressure",
+      "/control/valve/set",
+      "/telemetry/vibration",
+      "/control/pump/stop"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 490.9,
+    "os": "Zephyr 3.4",
+    "mac": "86:b4:7b:d5:5f:2b",
+    "protocol": "HTTPS",
+    "events_per_day": 20.4
+  },
+  "SVC_0174": {
+    "entity_id": "SVC_0174",
+    "entity_type": "service_account",
+    "preferred_hour": 5,
+    "hour_std": 1.48,
+    "base_locations": [
+      "Chicago",
+      "Tokyo"
+    ],
+    "typical_resources": [
+      "/api/v1/data/export",
+      "/api/v1/deploy/status",
+      "/api/v1/certs/renew",
+      "/api/v1/config/update",
+      "/api/v1/backup/trigger",
+      "/api/v1/metrics/collect"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 75.5,
+    "os": "Debian 12",
+    "mac": "40:c7:f0:16:c6:bf",
+    "protocol": "AMQP",
+    "events_per_day": 33.4
+  },
+  "USR_0175": {
+    "entity_id": "USR_0175",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.1,
+    "base_locations": [
+      "Seoul"
+    ],
+    "typical_resources": [
+      "/files/docs/contracts",
+      "/email/inbox",
+      "/email/sent"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 2305.5,
+    "os": "Windows 11",
+    "mac": "0a:b0:7b:35:aa:44",
+    "protocol": "SSH",
+    "events_per_day": 9.2
+  },
+  "SVC_0176": {
+    "entity_id": "SVC_0176",
+    "entity_type": "service_account",
+    "preferred_hour": 9,
+    "hour_std": 0.55,
+    "base_locations": [
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/api/v1/logs/audit",
+      "/api/v1/users/list",
+      "/api/v1/deploy/status"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 94.7,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "b6:ed:f5:5d:45:20",
+    "protocol": "gRPC",
+    "events_per_day": 48.0
+  },
+  "DEV_0177": {
+    "entity_id": "DEV_0177",
+    "entity_type": "edge_device",
+    "preferred_hour": 4,
+    "hour_std": 2.26,
+    "base_locations": [
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/config/network",
+      "/logs/system",
+      "/diagnostics/self_test"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 597.3,
+    "os": "Linux 5.15-rt",
+    "mac": "82:16:66:15:a1:9e",
+    "protocol": "HTTPS",
+    "events_per_day": 17.0
+  },
+  "SVC_0178": {
+    "entity_id": "SVC_0178",
+    "entity_type": "service_account",
+    "preferred_hour": 9,
+    "hour_std": 1.02,
+    "base_locations": [
+      "Tokyo"
+    ],
+    "typical_resources": [
+      "/api/v1/metrics/collect",
+      "/api/v1/data/export",
+      "/api/v1/certs/renew"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 98.8,
+    "os": "Alpine 3.18",
+    "mac": "dc:81:12:61:92:b6",
+    "protocol": "AMQP",
+    "events_per_day": 38.0
+  },
+  "SVC_0179": {
+    "entity_id": "SVC_0179",
+    "entity_type": "service_account",
+    "preferred_hour": 23,
+    "hour_std": 1.25,
+    "base_locations": [
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/api/v1/config/update",
+      "/api/v1/auth/token",
+      "/api/v1/db/query",
+      "/api/v1/certs/renew",
+      "/api/v1/deploy/status",
+      "/api/v1/users/list"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 15.5,
+    "os": "Alpine 3.18",
+    "mac": "be:8b:3f:bc:df:cc",
+    "protocol": "SSH",
+    "events_per_day": 90.2
+  },
+  "USR_0180": {
+    "entity_id": "USR_0180",
+    "entity_type": "user",
+    "preferred_hour": 9,
+    "hour_std": 1.41,
+    "base_locations": [
+      "New York"
+    ],
+    "typical_resources": [
+      "/files/reports/quarterly.xlsx",
+      "/apps/erp/inventory",
+      "/apps/crm/dashboard",
+      "/files/docs/policy.pdf",
+      "/files/shared/presentations"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 3145.0,
+    "os": "Ubuntu 22.04",
+    "mac": "ec:ad:5f:fe:fe:bc",
+    "protocol": "VPN",
+    "events_per_day": 12.7
+  },
+  "USR_0181": {
+    "entity_id": "USR_0181",
+    "entity_type": "user",
+    "preferred_hour": 14,
+    "hour_std": 2.4,
+    "base_locations": [
+      "S\u00e3o Paulo",
+      "Singapore"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/files/reports/quarterly.xlsx",
+      "/apps/slack",
+      "/email/sent"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 1529.9,
+    "os": "macOS 14",
+    "mac": "52:d9:28:dc:5c:96",
+    "protocol": "VPN",
+    "events_per_day": 6.1
+  },
+  "USR_0182": {
+    "entity_id": "USR_0182",
+    "entity_type": "user",
+    "preferred_hour": 11,
+    "hour_std": 1.07,
+    "base_locations": [
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/email/inbox",
+      "/files/reports/quarterly.xlsx",
+      "/apps/slack"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2554.8,
+    "os": "Windows 11",
+    "mac": "58:9c:e4:da:55:e3",
+    "protocol": "RDP",
+    "events_per_day": 3.9
+  },
+  "USR_0183": {
+    "entity_id": "USR_0183",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 1.09,
+    "base_locations": [
+      "Seoul",
+      "London"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/files/docs/contracts",
+      "/email/inbox",
+      "/files/reports/quarterly.xlsx"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 3021.4,
+    "os": "Windows 10",
+    "mac": "5c:de:8c:1d:26:cf",
+    "protocol": "VPN",
+    "events_per_day": 7.2
+  },
+  "USR_0184": {
+    "entity_id": "USR_0184",
+    "entity_type": "user",
+    "preferred_hour": 8,
+    "hour_std": 1.82,
+    "base_locations": [
+      "S\u00e3o Paulo",
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/files/shared/presentations",
+      "/apps/jira/board",
+      "/email/inbox"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 2931.5,
+    "os": "macOS 14",
+    "mac": "10:0f:49:e0:11:40",
+    "protocol": "RDP",
+    "events_per_day": 10.9
+  },
+  "USR_0185": {
+    "entity_id": "USR_0185",
+    "entity_type": "user",
+    "preferred_hour": 7,
+    "hour_std": 1.24,
+    "base_locations": [
+      "Beijing"
+    ],
+    "typical_resources": [
+      "/apps/crm/dashboard",
+      "/apps/hr/timesheet",
+      "/files/docs/contracts"
+    ],
+    "preferred_auth": "biometric",
+    "session_mean": 2601.7,
+    "os": "macOS 14",
+    "mac": "f2:b9:c4:10:4e:e6",
+    "protocol": "HTTPS",
+    "events_per_day": 11.2
+  },
+  "SVC_0186": {
+    "entity_id": "SVC_0186",
+    "entity_type": "service_account",
+    "preferred_hour": 5,
+    "hour_std": 0.69,
+    "base_locations": [
+      "Chicago",
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/api/v1/db/query",
+      "/api/v1/data/export",
+      "/api/v1/certs/renew"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 8.4,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "3e:46:bb:cb:a0:8e",
+    "protocol": "SSH",
+    "events_per_day": 86.1
+  },
+  "USR_0187": {
+    "entity_id": "USR_0187",
+    "entity_type": "user",
+    "preferred_hour": 16,
+    "hour_std": 2.23,
+    "base_locations": [
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/apps/crm/dashboard",
+      "/files/docs/contracts",
+      "/apps/jira/board",
+      "/email/inbox",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2999.3,
+    "os": "Windows 11",
+    "mac": "b4:ff:c6:3c:86:85",
+    "protocol": "SSH",
+    "events_per_day": 13.0
+  },
+  "SVC_0188": {
+    "entity_id": "SVC_0188",
+    "entity_type": "service_account",
+    "preferred_hour": 11,
+    "hour_std": 0.51,
+    "base_locations": [
+      "Beijing"
+    ],
+    "typical_resources": [
+      "/api/v1/db/query",
+      "/api/v1/config/update",
+      "/api/v1/backup/trigger",
+      "/api/v1/data/export"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 69.4,
+    "os": "Ubuntu 22.04 Server",
+    "mac": "72:fb:66:3e:45:25",
+    "protocol": "AMQP",
+    "events_per_day": 29.3
+  },
+  "DEV_0189": {
+    "entity_id": "DEV_0189",
+    "entity_type": "edge_device",
+    "preferred_hour": 1,
+    "hour_std": 2.27,
+    "base_locations": [
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/firmware/check_update",
+      "/control/pump/stop",
+      "/telemetry/vibration",
+      "/diagnostics/self_test",
+      "/logs/system"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 213.0,
+    "os": "FreeRTOS 10.5",
+    "mac": "e4:2c:a3:b1:21:94",
+    "protocol": "Modbus-TCP",
+    "events_per_day": 10.7
+  },
+  "DEV_0190": {
+    "entity_id": "DEV_0190",
+    "entity_type": "edge_device",
+    "preferred_hour": 8,
+    "hour_std": 2.93,
+    "base_locations": [
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/control/pump/stop",
+      "/telemetry/temperature",
+      "/logs/system",
+      "/telemetry/vibration",
+      "/telemetry/pressure",
+      "/config/network"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 467.0,
+    "os": "Linux 5.15-rt",
+    "mac": "3c:b9:72:3e:66:47",
+    "protocol": "Modbus-TCP",
+    "events_per_day": 41.6
+  },
+  "USR_0191": {
+    "entity_id": "USR_0191",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 2.03,
+    "base_locations": [
+      "San Francisco"
+    ],
+    "typical_resources": [
+      "/email/sent",
+      "/email/inbox",
+      "/files/docs/contracts",
+      "/files/docs/policy.pdf",
+      "/apps/crm/dashboard"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 2844.2,
+    "os": "Windows 11",
+    "mac": "64:ef:42:2c:21:9e",
+    "protocol": "HTTPS",
+    "events_per_day": 11.5
+  },
+  "DEV_0192": {
+    "entity_id": "DEV_0192",
+    "entity_type": "edge_device",
+    "preferred_hour": 21,
+    "hour_std": 1.69,
+    "base_locations": [
+      "Dubai"
+    ],
+    "typical_resources": [
+      "/control/pump/stop",
+      "/telemetry/vibration",
+      "/firmware/check_update",
+      "/telemetry/pressure",
+      "/config/network"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 594.7,
+    "os": "Zephyr 3.4",
+    "mac": "72:d1:25:40:a2:25",
+    "protocol": "CoAP",
+    "events_per_day": 37.0
+  },
+  "USR_0193": {
+    "entity_id": "USR_0193",
+    "entity_type": "user",
+    "preferred_hour": 18,
+    "hour_std": 2.12,
+    "base_locations": [
+      "Seoul"
+    ],
+    "typical_resources": [
+      "/apps/slack",
+      "/files/reports/quarterly.xlsx",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 516.6,
+    "os": "macOS 14",
+    "mac": "d4:41:5d:42:dd:1c",
+    "protocol": "SSH",
+    "events_per_day": 12.9
+  },
+  "USR_0194": {
+    "entity_id": "USR_0194",
+    "entity_type": "user",
+    "preferred_hour": 9,
+    "hour_std": 1.38,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/apps/jira/board",
+      "/apps/crm/dashboard",
+      "/apps/slack",
+      "/email/sent"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3590.5,
+    "os": "Ubuntu 22.04",
+    "mac": "f2:54:52:a5:73:b1",
+    "protocol": "SSH",
+    "events_per_day": 8.1
+  },
+  "USR_0195": {
+    "entity_id": "USR_0195",
+    "entity_type": "user",
+    "preferred_hour": 19,
+    "hour_std": 2.28,
+    "base_locations": [
+      "Mumbai"
+    ],
+    "typical_resources": [
+      "/apps/slack",
+      "/email/sent",
+      "/apps/erp/inventory"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 1028.5,
+    "os": "ChromeOS",
+    "mac": "9c:80:64:8c:40:9b",
+    "protocol": "VPN",
+    "events_per_day": 4.0
+  },
+  "USR_0196": {
+    "entity_id": "USR_0196",
+    "entity_type": "user",
+    "preferred_hour": 10,
+    "hour_std": 1.98,
+    "base_locations": [
+      "S\u00e3o Paulo"
+    ],
+    "typical_resources": [
+      "/apps/crm/dashboard",
+      "/apps/hr/timesheet",
+      "/files/shared/presentations"
+    ],
+    "preferred_auth": "certificate",
+    "session_mean": 403.3,
+    "os": "Ubuntu 22.04",
+    "mac": "14:4e:57:ac:15:0e",
+    "protocol": "VPN",
+    "events_per_day": 11.8
+  },
+  "DEV_0197": {
+    "entity_id": "DEV_0197",
+    "entity_type": "edge_device",
+    "preferred_hour": 14,
+    "hour_std": 1.84,
+    "base_locations": [
+      "Tokyo"
+    ],
+    "typical_resources": [
+      "/control/valve/set",
+      "/telemetry/vibration",
+      "/control/pump/start",
+      "/telemetry/temperature"
+    ],
+    "preferred_auth": "token",
+    "session_mean": 298.8,
+    "os": "VxWorks 7",
+    "mac": "a4:6b:d5:0f:fe:94",
+    "protocol": "HTTPS",
+    "events_per_day": 22.5
+  },
+  "USR_0198": {
+    "entity_id": "USR_0198",
+    "entity_type": "user",
+    "preferred_hour": 16,
+    "hour_std": 2.34,
+    "base_locations": [
+      "Toronto"
+    ],
+    "typical_resources": [
+      "/files/docs/policy.pdf",
+      "/files/shared/presentations",
+      "/apps/confluence/wiki"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 3164.8,
+    "os": "macOS 14",
+    "mac": "70:98:e8:25:1e:50",
+    "protocol": "HTTPS",
+    "events_per_day": 11.6
+  },
+  "USR_0199": {
+    "entity_id": "USR_0199",
+    "entity_type": "user",
+    "preferred_hour": 8,
+    "hour_std": 2.3,
+    "base_locations": [
+      "Chicago"
+    ],
+    "typical_resources": [
+      "/email/inbox",
+      "/apps/crm/dashboard",
+      "/apps/slack",
+      "/files/shared/presentations",
+      "/apps/confluence/wiki",
+      "/apps/hr/timesheet"
+    ],
+    "preferred_auth": "password",
+    "session_mean": 972.2,
+    "os": "macOS 13",
+    "mac": "f8:ae:49:a0:a3:b0",
+    "protocol": "HTTPS",
+    "events_per_day": 4.1
+  }
+}
